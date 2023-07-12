@@ -1,0 +1,435 @@
+E:\orca\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.config
+E:\orca\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe
+E:\orca\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.pdb
+E:\orca\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.xml
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbprojResolveAssemblyReference.cache
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.area.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.cfondo.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.clientes.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.departamento.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.disitrito.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.doc_compra.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Entidad.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.conexion.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Fondos.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.moneda.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Resources.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.opciones.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.principal.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.provincia.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.regcuentabanco.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_bancos.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rproveedores.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.servidorsql.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcambio.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcliente.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tdoc.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.uni_negocio.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.usuario.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.GenerateResource.Cache
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.xml
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.pdb
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_participes.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_de_cuentas_bancos.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_bancos_fondo.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Datos_Generales_del_Fondo.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Regristro_mancomunado.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_clientes.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Calificacion_de_Cliente.resources
+E:\orca\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\orca\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_participaciones.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.distribu_benefi.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gestion.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Actualizacion_de_datos.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anex_Cronog.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gasto_comi_desembolso.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas_Operacion.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comisiones_por_desembolso.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anexo.resources
+E:\orca\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.fac_operacion_anx.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.config
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.xml
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.pdb
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.pdb
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.xml
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbprojResolveAssemblyReference.cache
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Actualizacion_de_datos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anexo.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anex_Cronog.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.area.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Calificacion_de_Cliente.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.cfondo.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.clientes.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comisiones_por_desembolso.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas_Operacion.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Datos_Generales_del_Fondo.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.departamento.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.disitrito.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.distribu_benefi.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.doc_compra.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Entidad.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.conexion.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.fac_operacion_anx.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Fondos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gasto_comi_desembolso.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gestion.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.moneda.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Resources.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.opciones.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.principal.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.provincia.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.regcuentabanco.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_bancos_fondo.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_clientes.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_de_cuentas_bancos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_participes.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Regristro_mancomunado.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_bancos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_participaciones.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rproveedores.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.servidorsql.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcambio.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcliente.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tdoc.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.uni_negocio.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.usuario.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.GenerateResource.Cache
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.diasnumero.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.historial.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.manifest
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.application
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe.manifest
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.application
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Amortizacion.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Feriados.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rev_cro_anx.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.devoluciones.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comi_cap_parti.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.otros_gastos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gast_adm_fomdo.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reporte_cuotas.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.plancontable.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuentas_de_Amarres_de_Debe_y_Haber.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.G_Asientos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.facturacion_fondos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.desembolsos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Mov_bancos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.param_asientos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reparticion_beneficio.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form2.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.SplashScreen1.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.accautodistribene.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.monitoreovencimientos.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form4.resources
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.ofactoring.exe.config
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.config
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.manifest
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.application
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.pdb
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.xml
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.Common.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbprojResolveAssemblyReference.cache
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.ofactoring.exe.config
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Actualizacion_de_datos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Amortizacion.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anexo.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anex_Cronog.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.area.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Calificacion_de_Cliente.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.cfondo.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.clientes.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comisiones_por_desembolso.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comi_cap_parti.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuentas_de_Amarres_de_Debe_y_Haber.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas_Operacion.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Datos_Generales_del_Fondo.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.departamento.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.desembolsos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.devoluciones.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.diasnumero.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.disitrito.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.distribu_benefi.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.doc_compra.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Entidad.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.conexion.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.facturacion_fondos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.fac_operacion_anx.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Feriados.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Fondos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.param_asientos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form2.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.accautodistribene.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form4.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gasto_comi_desembolso.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gast_adm_fomdo.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gestion.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.G_Asientos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.historial.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.moneda.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.monitoreovencimientos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Mov_bancos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Resources.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.opciones.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.otros_gastos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.plancontable.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.principal.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.provincia.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.regcuentabanco.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_bancos_fondo.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_clientes.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_de_cuentas_bancos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_participes.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Regristro_mancomunado.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_bancos.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_participaciones.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reparticion_beneficio.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reporte_cuotas.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rev_cro_anx.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rproveedores.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.servidorsql.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.SplashScreen1.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcambio.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcliente.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tdoc.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.uni_negocio.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.usuario.resources
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.GenerateResource.Cache
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe.manifest
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.application
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.xml
+G:\orca\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.pdb
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.config
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.manifest
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.application
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.pdb
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.xml
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.AssemblyReference.cache
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.SuggestedBindingRedirects.cache
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe.config
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Actualizacion_de_datos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Amortizacion.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anexo.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anex_Cronog.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.area.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Calificacion_de_Cliente.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.cfondo.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.clientes.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comisiones_por_desembolso.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comi_cap_parti.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuentas_de_Amarres_de_Debe_y_Haber.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas_Operacion.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Datos_Generales_del_Fondo.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.departamento.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.desembolsos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.devoluciones.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.diasnumero.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.disitrito.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.distribu_benefi.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.doc_compra.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Entidad.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.conexion.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.facturacion_fondos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.fac_operacion_anx.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Feriados.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Fondos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.param_asientos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form2.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.accautodistribene.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form4.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gasto_comi_desembolso.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gast_adm_fomdo.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gestion.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.G_Asientos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.historial.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.moneda.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.monitoreovencimientos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Mov_bancos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Resources.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.opciones.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.otros_gastos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.plancontable.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.principal.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.provincia.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.regcuentabanco.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_bancos_fondo.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_clientes.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_de_cuentas_bancos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_participes.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Regristro_mancomunado.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_bancos.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_participaciones.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reparticion_beneficio.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reporte_cuotas.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rev_cro_anx.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rproveedores.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.servidorsql.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.SplashScreen1.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcambio.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcliente.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tdoc.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.uni_negocio.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.usuario.resources
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.GenerateResource.cache
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.CoreCompileInputs.cache
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe.manifest
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.application
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.CopyComplete
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.xml
+C:\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.pdb
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.config
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe.manifest
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.application
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.exe
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.pdb
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ofactoring.xml
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.AssemblyReference.cache
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe.config
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Actualizacion_de_datos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Amortizacion.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anexo.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Anex_Cronog.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.area.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Calificacion_de_Cliente.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.cfondo.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.clientes.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comisiones_por_desembolso.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.comi_cap_parti.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuentas_de_Amarres_de_Debe_y_Haber.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Cuotas_Operacion.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Datos_Generales_del_Fondo.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.departamento.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.desembolsos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.devoluciones.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.diasnumero.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.disitrito.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.distribu_benefi.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.doc_compra.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Entidad.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.conexion.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.facturacion_fondos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.fac_operacion_anx.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Feriados.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Fondos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.param_asientos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form2.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.accautodistribene.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Form4.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gasto_comi_desembolso.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gast_adm_fomdo.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.gestion.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.G_Asientos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.historial.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.moneda.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.monitoreovencimientos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Mov_bancos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Resources.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.opciones.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.otros_gastos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.plancontable.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.principal.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.provincia.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.regcuentabanco.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_bancos_fondo.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_clientes.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_de_cuentas_bancos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.registro_participes.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.Regristro_mancomunado.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_bancos.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reg_participaciones.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reparticion_beneficio.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.reporte_cuotas.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rev_cro_anx.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.rproveedores.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.servidorsql.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.SplashScreen1.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcambio.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tcliente.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.tdoc.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.uni_negocio.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.usuario.resources
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.GenerateResource.cache
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe.manifest
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.application
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\OPTIMA.vbproj.CopyComplete
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.exe
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.xml
+C:\Users\Pedro\Documents\coray\SISTEMA ZITRO\PROGRAMACION (1)\PROGRAMACION\OPTIMA_INVERSIONES\ofactoring\ofactoring\ofactoring\obj\Debug\ofactoring.pdb

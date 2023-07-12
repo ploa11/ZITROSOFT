@@ -1,0 +1,27 @@
+C:\Users\Milvio\Desktop\ReportePrintDocument\bin\Debug\ReportePrintDocument.exe.config
+C:\Users\Milvio\Desktop\ReportePrintDocument\bin\Debug\ReportePrintDocument.exe
+C:\Users\Milvio\Desktop\ReportePrintDocument\bin\Debug\ReportePrintDocument.pdb
+C:\Users\Milvio\Desktop\ReportePrintDocument\bin\Debug\ReportePrintDocument.xml
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbprojAssemblyReference.cache
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.Form1.resources
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.ImprimirForm.resources
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.Resources.resources
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbproj.GenerateResource.cache
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbproj.CoreCompileInputs.cache
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.exe
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.xml
+C:\Users\Milvio\Desktop\ReportePrintDocument\obj\Debug\ReportePrintDocument.pdb
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\bin\Debug\ReportePrintDocument.exe.config
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\bin\Debug\ReportePrintDocument.exe
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\bin\Debug\ReportePrintDocument.pdb
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\bin\Debug\ReportePrintDocument.xml
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbproj.AssemblyReference.cache
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbproj.SuggestedBindingRedirects.cache
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.Form1.resources
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.ImprimirForm.resources
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.Resources.resources
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbproj.GenerateResource.cache
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.vbproj.CoreCompileInputs.cache
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.exe
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.xml
+C:\SISTEMA ZITRO\ReportePrintDocument\ReportePrintDocument\obj\Debug\ReportePrintDocument.pdb

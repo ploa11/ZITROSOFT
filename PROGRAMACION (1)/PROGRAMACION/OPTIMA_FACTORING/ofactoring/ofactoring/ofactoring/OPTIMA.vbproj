@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AE9E1B2-50AE-4447-8025-C5A6565AA875}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ofactoring.My.MyApplication</StartupObject>
+    <RootNamespace>ofactoring</RootNamespace>
+    <AssemblyName>ofactoring</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ofactoring.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ofactoring.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icono2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actualizacion de datos.Designer.vb">
+      <DependentUpon>Actualizacion de datos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Actualizacion de datos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anexo.Designer.vb">
+      <DependentUpon>Anexo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anexo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anex_Cronog.Designer.vb">
+      <DependentUpon>Anex_Cronog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anex_Cronog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calificacion de Cliente.Designer.vb">
+      <DependentUpon>Calificacion de Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Calificacion de Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cfondo.Designer.vb">
+      <DependentUpon>cfondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cfondo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes.Designer.vb">
+      <DependentUpon>clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comisiones_por_desembolso.Designer.vb">
+      <DependentUpon>comisiones_por_desembolso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="comisiones_por_desembolso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuotas.Designer.vb">
+      <DependentUpon>Cuotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuotas_Operacion.Designer.vb">
+      <DependentUpon>Cuotas_Operacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuotas_Operacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datos Generales del Fondo.Designer.vb">
+      <DependentUpon>Datos Generales del Fondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Datos Generales del Fondo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departamento.Designer.vb">
+      <DependentUpon>departamento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="departamento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="disitrito.Designer.vb">
+      <DependentUpon>disitrito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="disitrito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="distribu_benefi.Designer.vb">
+      <DependentUpon>distribu_benefi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="distribu_benefi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doc_compra.Designer.vb">
+      <DependentUpon>doc_compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="doc_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion.Designer.vb">
+      <DependentUpon>conexion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="area.Designer.vb">
+      <DependentUpon>area.vb</DependentUpon>
+    </Compile>
+    <Compile Include="area.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="entidad.Designer.vb">
+      <DependentUpon>entidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="entidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fac_operacion_anx.Designer.vb">
+      <DependentUpon>fac_operacion_anx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fac_operacion_anx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fondos.Designer.vb">
+      <DependentUpon>Fondos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fondos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gasto_comi_desembolso.Designer.vb">
+      <DependentUpon>gasto_comi_desembolso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gasto_comi_desembolso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gestion.Designer.vb">
+      <DependentUpon>gestion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gestion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moneda.Designer.vb">
+      <DependentUpon>moneda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="moneda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="opciones.Designer.vb">
+      <DependentUpon>opciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="opciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.vb">
+      <DependentUpon>principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="provincia.Designer.vb">
+      <DependentUpon>provincia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="provincia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regcuentabanco.Designer.vb">
+      <DependentUpon>regcuentabanco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="regcuentabanco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_bancos_fondo.Designer.vb">
+      <DependentUpon>registro_bancos_fondo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_bancos_fondo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_clientes.Designer.vb">
+      <DependentUpon>registro_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_de_cuentas_bancos.Designer.vb">
+      <DependentUpon>registro_de_cuentas_bancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_de_cuentas_bancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_participes.Designer.vb">
+      <DependentUpon>registro_participes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_participes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regristro_mancomunado.Designer.vb">
+      <DependentUpon>Regristro_mancomunado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Regristro_mancomunado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg_bancos.Designer.vb">
+      <DependentUpon>reg_bancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reg_bancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg_participaciones.Designer.vb">
+      <DependentUpon>reg_participaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reg_participaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rproveedores.Designer.vb">
+      <DependentUpon>rproveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rproveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="servidorsql.Designer.vb">
+      <DependentUpon>servidorsql.vb</DependentUpon>
+    </Compile>
+    <Compile Include="servidorsql.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tcambio.Designer.vb">
+      <DependentUpon>tcambio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tcambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tcliente.Designer.vb">
+      <DependentUpon>tcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tdoc.Designer.vb">
+      <DependentUpon>tdoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tdoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uni_negocio.Designer.vb">
+      <DependentUpon>uni_negocio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uni_negocio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuario.Designer.vb">
+      <DependentUpon>usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Actualizacion de datos.resx">
+      <DependentUpon>Actualizacion de datos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anexo.resx">
+      <DependentUpon>Anexo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anex_Cronog.resx">
+      <DependentUpon>Anex_Cronog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="area.resx">
+      <DependentUpon>area.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calificacion de Cliente.resx">
+      <DependentUpon>Calificacion de Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cfondo.resx">
+      <DependentUpon>cfondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes.resx">
+      <DependentUpon>clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comisiones_por_desembolso.resx">
+      <DependentUpon>comisiones_por_desembolso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuotas.resx">
+      <DependentUpon>Cuotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuotas_Operacion.resx">
+      <DependentUpon>Cuotas_Operacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Datos Generales del Fondo.resx">
+      <DependentUpon>Datos Generales del Fondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departamento.resx">
+      <DependentUpon>departamento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="disitrito.resx">
+      <DependentUpon>disitrito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="distribu_benefi.resx">
+      <DependentUpon>distribu_benefi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doc_compra.resx">
+      <DependentUpon>doc_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entidad.resx">
+      <DependentUpon>entidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conexion.resx">
+      <DependentUpon>conexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fac_operacion_anx.resx">
+      <DependentUpon>fac_operacion_anx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fondos.resx">
+      <DependentUpon>Fondos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gasto_comi_desembolso.resx">
+      <DependentUpon>gasto_comi_desembolso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gestion.resx">
+      <DependentUpon>gestion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moneda.resx">
+      <DependentUpon>moneda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opciones.resx">
+      <DependentUpon>opciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="provincia.resx">
+      <DependentUpon>provincia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regcuentabanco.resx">
+      <DependentUpon>regcuentabanco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_bancos_fondo.resx">
+      <DependentUpon>registro_bancos_fondo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_clientes.resx">
+      <DependentUpon>registro_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_de_cuentas_bancos.resx">
+      <DependentUpon>registro_de_cuentas_bancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_participes.resx">
+      <DependentUpon>registro_participes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Regristro_mancomunado.resx">
+      <DependentUpon>Regristro_mancomunado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reg_bancos.resx">
+      <DependentUpon>reg_bancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reg_participaciones.resx">
+      <DependentUpon>reg_participaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rproveedores.resx">
+      <DependentUpon>rproveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="servidorsql.resx">
+      <DependentUpon>servidorsql.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tcambio.resx">
+      <DependentUpon>tcambio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tcliente.resx">
+      <DependentUpon>tcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tdoc.resx">
+      <DependentUpon>tdoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uni_negocio.resx">
+      <DependentUpon>uni_negocio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuario.resx">
+      <DependentUpon>usuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Optima Invversiones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1487806400_Estate_home_house_building_property_real.ico" />
+    <Content Include="conta.ico" />
+    <Content Include="Icono2.ico" />
+    <None Include="Resources\icono programa.jpg" />
+    <None Include="Resources\contabilidad.jpg" />
+    <None Include="Resources\hoja.jpg" />
+    <None Include="Resources\logoampliosunat.png" />
+    <None Include="Resources\op2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
