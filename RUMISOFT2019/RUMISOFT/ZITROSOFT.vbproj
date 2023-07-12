@@ -581,6 +581,12 @@
   <ItemGroup>
     <None Include="Resources\nlzitro2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\formato\WhatsApp Image 2023-06-09 at 7.11.17 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\formato\WhatsApp Image 2023-06-09 at 7.11.17 PM %281%29.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

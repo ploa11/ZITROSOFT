@@ -29,12 +29,6 @@ Partial Class Form_Impresion_OC
         Me.Label_oc = New System.Windows.Forms.Label()
         Me.oc = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ITEM = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DESCRIPCION = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.UND = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.CANTIDAD = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.P_UNITARIO = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SUBTOTAL = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label_direcc = New System.Windows.Forms.Label()
         Me.Label_sres = New System.Windows.Forms.Label()
         Me.Label_ruc = New System.Windows.Forms.Label()
@@ -53,12 +47,12 @@ Partial Class Form_Impresion_OC
         Me.Label_pers = New System.Windows.Forms.Label()
         Me.f_pago = New System.Windows.Forms.Label()
         Me.Label_f_pago = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
+        Me.SUBTOTAL = New System.Windows.Forms.Label()
+        Me.Label_SUBTOTAL = New System.Windows.Forms.Label()
+        Me.IGV = New System.Windows.Forms.Label()
+        Me.Label_IGV = New System.Windows.Forms.Label()
+        Me.TOTAL = New System.Windows.Forms.Label()
+        Me.Label_TOTAL = New System.Windows.Forms.Label()
         Me.P1 = New System.Windows.Forms.Label()
         Me.P2 = New System.Windows.Forms.Label()
         Me.P3 = New System.Windows.Forms.Label()
@@ -67,7 +61,6 @@ Partial Class Form_Impresion_OC
         Me.P6 = New System.Windows.Forms.Label()
         Me.lbNumeroPagina = New System.Windows.Forms.Label()
         Me.Pag_N = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.REQUE = New System.Windows.Forms.Label()
         Me.RQ = New System.Windows.Forms.Label()
         Me.SBCC = New System.Windows.Forms.Label()
@@ -76,7 +69,12 @@ Partial Class Form_Impresion_OC
         Me.Label_CC = New System.Windows.Forms.Label()
         Me.OBS = New System.Windows.Forms.Label()
         Me.Label_OB = New System.Windows.Forms.Label()
+        Me.LINEAFONDO = New System.Windows.Forms.Label()
+        Me.CONSIDERACIONES = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -127,49 +125,11 @@ Partial Class Form_Impresion_OC
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ITEM, Me.DESCRIPCION, Me.UND, Me.CANTIDAD, Me.P_UNITARIO, Me.SUBTOTAL})
         Me.DataGridView1.Location = New System.Drawing.Point(12, 443)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(954, 167)
         Me.DataGridView1.TabIndex = 5
-        '
-        'ITEM
-        '
-        Me.ITEM.HeaderText = "ITEM"
-        Me.ITEM.Name = "ITEM"
-        Me.ITEM.ReadOnly = True
-        '
-        'DESCRIPCION
-        '
-        Me.DESCRIPCION.HeaderText = "DESCRIPCION"
-        Me.DESCRIPCION.Name = "DESCRIPCION"
-        Me.DESCRIPCION.ReadOnly = True
-        Me.DESCRIPCION.Width = 410
-        '
-        'UND
-        '
-        Me.UND.HeaderText = "UND"
-        Me.UND.Name = "UND"
-        Me.UND.ReadOnly = True
-        '
-        'CANTIDAD
-        '
-        Me.CANTIDAD.HeaderText = "CANTIDAD"
-        Me.CANTIDAD.Name = "CANTIDAD"
-        Me.CANTIDAD.ReadOnly = True
-        '
-        'P_UNITARIO
-        '
-        Me.P_UNITARIO.HeaderText = "P. UNITARIO"
-        Me.P_UNITARIO.Name = "P_UNITARIO"
-        Me.P_UNITARIO.ReadOnly = True
-        '
-        'SUBTOTAL
-        '
-        Me.SUBTOTAL.HeaderText = "SUBTOTAL"
-        Me.SUBTOTAL.Name = "SUBTOTAL"
-        Me.SUBTOTAL.ReadOnly = True
         '
         'Label_direcc
         '
@@ -333,59 +293,59 @@ Partial Class Form_Impresion_OC
         Me.Label_f_pago.TabIndex = 22
         Me.Label_f_pago.Text = "FECHA DE PAGO:"
         '
-        'Label23
+        'SUBTOTAL
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(893, 620)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(73, 13)
-        Me.Label23.TabIndex = 25
-        Me.Label23.Text = "......................"
+        Me.SUBTOTAL.AutoSize = True
+        Me.SUBTOTAL.Location = New System.Drawing.Point(893, 659)
+        Me.SUBTOTAL.Name = "SUBTOTAL"
+        Me.SUBTOTAL.Size = New System.Drawing.Size(73, 13)
+        Me.SUBTOTAL.TabIndex = 25
+        Me.SUBTOTAL.Text = "......................"
         '
-        'Label24
+        'Label_SUBTOTAL
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(768, 620)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(85, 13)
-        Me.Label24.TabIndex = 24
-        Me.Label24.Text = "SUBTOTAL: S/."
+        Me.Label_SUBTOTAL.AutoSize = True
+        Me.Label_SUBTOTAL.Location = New System.Drawing.Point(768, 659)
+        Me.Label_SUBTOTAL.Name = "Label_SUBTOTAL"
+        Me.Label_SUBTOTAL.Size = New System.Drawing.Size(82, 13)
+        Me.Label_SUBTOTAL.TabIndex = 24
+        Me.Label_SUBTOTAL.Text = "SUBTOTAL S/."
         '
-        'Label25
+        'IGV
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(893, 645)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(73, 13)
-        Me.Label25.TabIndex = 27
-        Me.Label25.Text = "......................"
+        Me.IGV.AutoSize = True
+        Me.IGV.Location = New System.Drawing.Point(893, 684)
+        Me.IGV.Name = "IGV"
+        Me.IGV.Size = New System.Drawing.Size(73, 13)
+        Me.IGV.TabIndex = 27
+        Me.IGV.Text = "......................"
         '
-        'Label26
+        'Label_IGV
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(768, 645)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(49, 13)
-        Me.Label26.TabIndex = 26
-        Me.Label26.Text = "IGV S/. :"
+        Me.Label_IGV.AutoSize = True
+        Me.Label_IGV.Location = New System.Drawing.Point(768, 684)
+        Me.Label_IGV.Name = "Label_IGV"
+        Me.Label_IGV.Size = New System.Drawing.Size(49, 13)
+        Me.Label_IGV.TabIndex = 26
+        Me.Label_IGV.Text = "IGV S/. :"
         '
-        'Label27
+        'TOTAL
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(893, 676)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(73, 13)
-        Me.Label27.TabIndex = 29
-        Me.Label27.Text = "......................"
+        Me.TOTAL.AutoSize = True
+        Me.TOTAL.Location = New System.Drawing.Point(893, 715)
+        Me.TOTAL.Name = "TOTAL"
+        Me.TOTAL.Size = New System.Drawing.Size(73, 13)
+        Me.TOTAL.TabIndex = 29
+        Me.TOTAL.Text = "......................"
         '
-        'Label28
+        'Label_TOTAL
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(768, 676)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(45, 13)
-        Me.Label28.TabIndex = 28
-        Me.Label28.Text = "TOTAL:"
+        Me.Label_TOTAL.AutoSize = True
+        Me.Label_TOTAL.Location = New System.Drawing.Point(768, 715)
+        Me.Label_TOTAL.Name = "Label_TOTAL"
+        Me.Label_TOTAL.Size = New System.Drawing.Size(63, 13)
+        Me.Label_TOTAL.TabIndex = 28
+        Me.Label_TOTAL.Text = "TOTAL S/.:"
         '
         'P1
         '
@@ -459,16 +419,6 @@ Partial Class Form_Impresion_OC
         Me.Pag_N.TabIndex = 36
         Me.Pag_N.Text = "Pág. #"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.RUMISOFT.My.Resources.Resources.nlzitro2
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 6)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(119, 108)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'REQUE
         '
         Me.REQUE.AutoSize = True
@@ -541,11 +491,53 @@ Partial Class Form_Impresion_OC
         Me.Label_OB.TabIndex = 44
         Me.Label_OB.Text = "OBSERVACIONES:"
         '
+        'LINEAFONDO
+        '
+        Me.LINEAFONDO.AutoSize = True
+        Me.LINEAFONDO.Location = New System.Drawing.Point(11, 623)
+        Me.LINEAFONDO.Name = "LINEAFONDO"
+        Me.LINEAFONDO.Size = New System.Drawing.Size(955, 13)
+        Me.LINEAFONDO.TabIndex = 46
+        Me.LINEAFONDO.Text = "_________________________________________________________________________________" &
+    "_____________________________________________________________________________"
+        '
+        'CONSIDERACIONES
+        '
+        Me.CONSIDERACIONES.AutoSize = True
+        Me.CONSIDERACIONES.Location = New System.Drawing.Point(16, 715)
+        Me.CONSIDERACIONES.Name = "CONSIDERACIONES"
+        Me.CONSIDERACIONES.Size = New System.Drawing.Size(73, 13)
+        Me.CONSIDERACIONES.TabIndex = 47
+        Me.CONSIDERACIONES.Text = "......................"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.RUMISOFT.My.Resources.Resources.WhatsApp_Image_2023_06_09_at_7_11_17_PM
+        Me.PictureBox2.Location = New System.Drawing.Point(386, 620)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(119, 108)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 48
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.RUMISOFT.My.Resources.Resources.nlzitro2
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(119, 108)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Form_Impresion_OC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(978, 749)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.CONSIDERACIONES)
+        Me.Controls.Add(Me.LINEAFONDO)
         Me.Controls.Add(Me.OBS)
         Me.Controls.Add(Me.Label_OB)
         Me.Controls.Add(Me.REQUE)
@@ -562,12 +554,12 @@ Partial Class Form_Impresion_OC
         Me.Controls.Add(Me.P3)
         Me.Controls.Add(Me.P2)
         Me.Controls.Add(Me.P1)
-        Me.Controls.Add(Me.Label27)
-        Me.Controls.Add(Me.Label28)
-        Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.Label26)
-        Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.Label24)
+        Me.Controls.Add(Me.TOTAL)
+        Me.Controls.Add(Me.Label_TOTAL)
+        Me.Controls.Add(Me.IGV)
+        Me.Controls.Add(Me.Label_IGV)
+        Me.Controls.Add(Me.SUBTOTAL)
+        Me.Controls.Add(Me.Label_SUBTOTAL)
         Me.Controls.Add(Me.f_pago)
         Me.Controls.Add(Me.Label_f_pago)
         Me.Controls.Add(Me.t_venta)
@@ -595,6 +587,7 @@ Partial Class Form_Impresion_OC
         Me.Name = "Form_Impresion_OC"
         Me.Text = "Form_Impresion_OC"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -626,18 +619,12 @@ Partial Class Form_Impresion_OC
     Friend WithEvents Label_pers As Label
     Friend WithEvents f_pago As Label
     Friend WithEvents Label_f_pago As Label
-    Friend WithEvents ITEM As DataGridViewTextBoxColumn
-    Friend WithEvents DESCRIPCION As DataGridViewTextBoxColumn
-    Friend WithEvents UND As DataGridViewTextBoxColumn
-    Friend WithEvents CANTIDAD As DataGridViewTextBoxColumn
-    Friend WithEvents P_UNITARIO As DataGridViewTextBoxColumn
-    Friend WithEvents SUBTOTAL As DataGridViewTextBoxColumn
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
+    Friend WithEvents SUBTOTAL As Label
+    Friend WithEvents Label_SUBTOTAL As Label
+    Friend WithEvents IGV As Label
+    Friend WithEvents Label_IGV As Label
+    Friend WithEvents TOTAL As Label
+    Friend WithEvents Label_TOTAL As Label
     Friend WithEvents P1 As Label
     Friend WithEvents P2 As Label
     Friend WithEvents P3 As Label
@@ -654,4 +641,7 @@ Partial Class Form_Impresion_OC
     Friend WithEvents Label_CC As Label
     Friend WithEvents OBS As Label
     Friend WithEvents Label_OB As Label
+    Friend WithEvents LINEAFONDO As Label
+    Friend WithEvents CONSIDERACIONES As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
