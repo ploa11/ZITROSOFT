@@ -88,7 +88,7 @@ Partial Class Form_Impresion_OC
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(326, 41)
+        Me.Label1.Location = New System.Drawing.Point(317, 65)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(213, 13)
         Me.Label1.TabIndex = 1
@@ -97,7 +97,7 @@ Partial Class Form_Impresion_OC
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(280, 71)
+        Me.Label2.Location = New System.Drawing.Point(271, 95)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(320, 13)
         Me.Label2.TabIndex = 2
@@ -106,7 +106,7 @@ Partial Class Form_Impresion_OC
         'Label_oc
         '
         Me.Label_oc.AutoSize = True
-        Me.Label_oc.Location = New System.Drawing.Point(718, 12)
+        Me.Label_oc.Location = New System.Drawing.Point(643, 9)
         Me.Label_oc.Name = "Label_oc"
         Me.Label_oc.Size = New System.Drawing.Size(113, 13)
         Me.Label_oc.TabIndex = 3
@@ -115,7 +115,7 @@ Partial Class Form_Impresion_OC
         'oc
         '
         Me.oc.AutoSize = True
-        Me.oc.Location = New System.Drawing.Point(740, 30)
+        Me.oc.Location = New System.Drawing.Point(665, 27)
         Me.oc.Name = "oc"
         Me.oc.Size = New System.Drawing.Size(13, 13)
         Me.oc.TabIndex = 4
@@ -129,7 +129,7 @@ Partial Class Form_Impresion_OC
         Me.DataGridView1.Location = New System.Drawing.Point(12, 484)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(871, 118)
+        Me.DataGridView1.Size = New System.Drawing.Size(744, 118)
         Me.DataGridView1.TabIndex = 5
         '
         'Label_direcc
@@ -297,7 +297,7 @@ Partial Class Form_Impresion_OC
         'SUBTOTAL
         '
         Me.SUBTOTAL.AutoSize = True
-        Me.SUBTOTAL.Location = New System.Drawing.Point(758, 637)
+        Me.SUBTOTAL.Location = New System.Drawing.Point(685, 637)
         Me.SUBTOTAL.Name = "SUBTOTAL"
         Me.SUBTOTAL.Size = New System.Drawing.Size(13, 13)
         Me.SUBTOTAL.TabIndex = 25
@@ -306,7 +306,7 @@ Partial Class Form_Impresion_OC
         'Label_SUBTOTAL
         '
         Me.Label_SUBTOTAL.AutoSize = True
-        Me.Label_SUBTOTAL.Location = New System.Drawing.Point(633, 637)
+        Me.Label_SUBTOTAL.Location = New System.Drawing.Point(560, 637)
         Me.Label_SUBTOTAL.Name = "Label_SUBTOTAL"
         Me.Label_SUBTOTAL.Size = New System.Drawing.Size(82, 13)
         Me.Label_SUBTOTAL.TabIndex = 24
@@ -315,7 +315,7 @@ Partial Class Form_Impresion_OC
         'IGV
         '
         Me.IGV.AutoSize = True
-        Me.IGV.Location = New System.Drawing.Point(758, 662)
+        Me.IGV.Location = New System.Drawing.Point(685, 662)
         Me.IGV.Name = "IGV"
         Me.IGV.Size = New System.Drawing.Size(13, 13)
         Me.IGV.TabIndex = 27
@@ -324,7 +324,7 @@ Partial Class Form_Impresion_OC
         'Label_IGV
         '
         Me.Label_IGV.AutoSize = True
-        Me.Label_IGV.Location = New System.Drawing.Point(633, 662)
+        Me.Label_IGV.Location = New System.Drawing.Point(560, 662)
         Me.Label_IGV.Name = "Label_IGV"
         Me.Label_IGV.Size = New System.Drawing.Size(49, 13)
         Me.Label_IGV.TabIndex = 26
@@ -333,7 +333,7 @@ Partial Class Form_Impresion_OC
         'TOTAL
         '
         Me.TOTAL.AutoSize = True
-        Me.TOTAL.Location = New System.Drawing.Point(758, 693)
+        Me.TOTAL.Location = New System.Drawing.Point(685, 693)
         Me.TOTAL.Name = "TOTAL"
         Me.TOTAL.Size = New System.Drawing.Size(13, 13)
         Me.TOTAL.TabIndex = 29
@@ -342,7 +342,7 @@ Partial Class Form_Impresion_OC
         'Label_TOTAL
         '
         Me.Label_TOTAL.AutoSize = True
-        Me.Label_TOTAL.Location = New System.Drawing.Point(633, 693)
+        Me.Label_TOTAL.Location = New System.Drawing.Point(560, 693)
         Me.Label_TOTAL.Name = "Label_TOTAL"
         Me.Label_TOTAL.Size = New System.Drawing.Size(63, 13)
         Me.Label_TOTAL.TabIndex = 28
@@ -369,7 +369,7 @@ Partial Class Form_Impresion_OC
         'P3
         '
         Me.P3.AutoSize = True
-        Me.P3.Location = New System.Drawing.Point(464, 460)
+        Me.P3.Location = New System.Drawing.Point(391, 460)
         Me.P3.Name = "P3"
         Me.P3.Size = New System.Drawing.Size(20, 13)
         Me.P3.TabIndex = 32
@@ -378,7 +378,7 @@ Partial Class Form_Impresion_OC
         'P4
         '
         Me.P4.AutoSize = True
-        Me.P4.Location = New System.Drawing.Point(557, 460)
+        Me.P4.Location = New System.Drawing.Point(484, 460)
         Me.P4.Name = "P4"
         Me.P4.Size = New System.Drawing.Size(20, 13)
         Me.P4.TabIndex = 33
@@ -387,7 +387,7 @@ Partial Class Form_Impresion_OC
         'P5
         '
         Me.P5.AutoSize = True
-        Me.P5.Location = New System.Drawing.Point(657, 460)
+        Me.P5.Location = New System.Drawing.Point(584, 460)
         Me.P5.Name = "P5"
         Me.P5.Size = New System.Drawing.Size(20, 13)
         Me.P5.TabIndex = 34
@@ -396,7 +396,7 @@ Partial Class Form_Impresion_OC
         'P6
         '
         Me.P6.AutoSize = True
-        Me.P6.Location = New System.Drawing.Point(756, 460)
+        Me.P6.Location = New System.Drawing.Point(683, 460)
         Me.P6.Name = "P6"
         Me.P6.Size = New System.Drawing.Size(20, 13)
         Me.P6.TabIndex = 35
@@ -405,7 +405,7 @@ Partial Class Form_Impresion_OC
         'lbNumeroPagina
         '
         Me.lbNumeroPagina.AutoSize = True
-        Me.lbNumeroPagina.Location = New System.Drawing.Point(797, 727)
+        Me.lbNumeroPagina.Location = New System.Drawing.Point(685, 727)
         Me.lbNumeroPagina.Name = "lbNumeroPagina"
         Me.lbNumeroPagina.Size = New System.Drawing.Size(13, 13)
         Me.lbNumeroPagina.TabIndex = 37
@@ -414,7 +414,7 @@ Partial Class Form_Impresion_OC
         'Pag_N
         '
         Me.Pag_N.AutoSize = True
-        Me.Pag_N.Location = New System.Drawing.Point(737, 727)
+        Me.Pag_N.Location = New System.Drawing.Point(630, 727)
         Me.Pag_N.Name = "Pag_N"
         Me.Pag_N.Size = New System.Drawing.Size(39, 13)
         Me.Pag_N.TabIndex = 36
@@ -514,9 +514,9 @@ Partial Class Form_Impresion_OC
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.RUMISOFT.My.Resources.Resources.firma_zitro2
-        Me.PictureBox2.Location = New System.Drawing.Point(449, 620)
+        Me.PictureBox2.Location = New System.Drawing.Point(344, 637)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(119, 108)
+        Me.PictureBox2.Size = New System.Drawing.Size(119, 68)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 48
         Me.PictureBox2.TabStop = False
@@ -545,7 +545,7 @@ Partial Class Form_Impresion_OC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(891, 749)
+        Me.ClientSize = New System.Drawing.Size(768, 749)
         Me.Controls.Add(Me.lineatop)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.CONSIDERACIONES)

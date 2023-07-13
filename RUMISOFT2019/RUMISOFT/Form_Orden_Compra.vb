@@ -585,18 +585,18 @@ estandares de calidad Solicitados."
         'Si deseamos poner un contador de páginas
         'Esta parte siempre va a salir en todas las paginas
         '---------------------------------------------------------------------------------------------
-        Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
+        'Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
         'Form_Impresion_OC.lbNumeroPagina.Text = 1
-        e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.Pag_N.Left, e.MarginBounds.Bottom)
-        e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.lbNumeroPagina.Left, e.MarginBounds.Bottom)
+        ' e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.Pag_N.Left, e.MarginBounds.Bottom)
+        ' e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.lbNumeroPagina.Left, e.MarginBounds.Bottom)
 
         'e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, 700, 1050)
         'e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, 750, 1050)
         'INSERTAMOS LINES DESPUES DE DATOS DE CLIENTE
         'Dim blackPen As New Pen(Color.Black, 2) : e.Graphics.DrawLine(blackPen, 50, 465, 790, 465)
 
-        If CInt(Form_Impresion_OC.lbNumeroPagina.Text) <= 1 Then
-            Dim newImage As Image = Form_Impresion_OC.PictureBox1.Image : e.Graphics.DrawImage(newImage, Form_Impresion_OC.PictureBox1.Left, Form_Impresion_OC.PictureBox1.Top, Form_Impresion_OC.PictureBox1.Width, Form_Impresion_OC.PictureBox1.Height)
+        'If CInt(Form_Impresion_OC.lbNumeroPagina.Text) <= 1 Then
+        Dim newImage As Image = Form_Impresion_OC.PictureBox1.Image : e.Graphics.DrawImage(newImage, Form_Impresion_OC.PictureBox1.Left, Form_Impresion_OC.PictureBox1.Top, Form_Impresion_OC.PictureBox1.Width, Form_Impresion_OC.PictureBox1.Height)
             e.Graphics.DrawString(Form_Impresion_OC.Label_oc.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_oc.Left, Form_Impresion_OC.Label_oc.Top)
             e.Graphics.DrawString(Form_Impresion_OC.oc.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.oc.Left, Form_Impresion_OC.oc.Top)
             e.Graphics.DrawString(Form_Impresion_OC.Label1.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label1.Left, Form_Impresion_OC.Label1.Top)
@@ -627,9 +627,9 @@ estandares de calidad Solicitados."
             e.Graphics.DrawString(Form_Impresion_OC.REQUE.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.REQUE.Left, Form_Impresion_OC.REQUE.Top)
             e.Graphics.DrawString(Form_Impresion_OC.Label_OB.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_OB.Left, Form_Impresion_OC.Label_OB.Top)
             e.Graphics.DrawString(Form_Impresion_OC.OBS.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.OBS.Left, Form_Impresion_OC.OBS.Top)
-            '
-            PosicionSinEncabezado = Form_Impresion_OC.P1.Top 'Reseteo el valor de esta variable si entra en esta condicion para evitar que el encabezado se posicione mal
-        End If
+        '
+        'PosicionSinEncabezado = Form_Impresion_OC.P1.Top 'Reseteo el valor de esta variable si entra en esta condicion para evitar que el encabezado se posicione mal
+        '  End If
         'Imprimimos el encabezado o titulo de la lista de materias
         '-----------------------------------------------------------------------------------------------------------------------------
         e.Graphics.DrawString("ITEM", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P1.Left, PosicionSinEncabezado - 30)
@@ -643,10 +643,17 @@ estandares de calidad Solicitados."
         'Imprimimos los detalles del reporte, es decir el listado de materias
         '-----------------------------------------------------------------------------------------------------------------------------
         Dim startX As Integer = Form_Impresion_OC.P1.Left 'Tomamos la posicion horinzontal de la letra 'Punto1'
-        Dim startY As Integer = PosicionSinEncabezado 'Tomamos la posicion vertical de la letra 'Punto1'
+        Dim startY As Integer = Form_Impresion_OC.P1.Top 'Tomamos la posicion vertical de la letra 'Punto1'
         Dim item As Integer = 1
         Do While printLine < Form_Impresion_OC.DataGridView1.Rows.Count
+            If startY + Form_Impresion_OC.P1.Height > e.MarginBounds.Bottom Then
+                'Esta parte se activa solo si 'startY' que es la posicion vertical almacenada supera el borde inferior de la pagina
+                'Este se reinicia con cada pagina necesitada
+                'Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
+                e.HasMorePages = True
+                Exit Do
 
+            End If
 
             e.Graphics.DrawString(item, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P1.Left, startY)
             e.Graphics.DrawString(Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(1).Value.ToString, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P2.Left, startY)
@@ -657,20 +664,13 @@ estandares de calidad Solicitados."
             Dim val_sub As Decimal = Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(5).Value
             'Aqui estoy usando un tipo de letras mas grande 'LabelCodigo' mas grande que 'Punto1' para crear mas espacio entre filas
             '----------------------------------------------------------------------------------
-            startY += Form_Impresion_OC.Label_OB.Height
+            startY += Form_Impresion_OC.Label_t_venta.Height
 
             printLine += 1
             Contador += 1
             item += 1
             SUBTOTAL_OC += val_sub
-            If startY + Form_Impresion_OC.Pag_N.Height > e.MarginBounds.Bottom Then
-                'Esta parte se activa solo si 'startY' que es la posicion vertical almacenada supera el borde inferior de la pagina
-                'Este se reinicia con cada pagina necesitada
-                'Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
-                e.HasMorePages = True
-                Exit Do
 
-            End If
 
         Loop
 
@@ -706,7 +706,10 @@ estandares de calidad Solicitados."
             Dim newImage2 As Image = Form_Impresion_OC.PictureBox2.Image : e.Graphics.DrawImage(newImage2, Form_Impresion_OC.P3.Left, startY + 100, Form_Impresion_OC.PictureBox2.Width, Form_Impresion_OC.PictureBox2.Height)
             e.Graphics.DrawString(Form_Impresion_OC.CONSIDERACIONES.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.P1.Left, startY + 300)
         End If
-
+        Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
+        'Form_Impresion_OC.lbNumeroPagina.Text = 1
+        e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.Pag_N.Left, e.MarginBounds.Bottom)
+        e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.lbNumeroPagina.Left, e.MarginBounds.Bottom)
     End Sub
 
     Dim xlibro As Microsoft.Office.Interop.Excel.Application
