@@ -216,12 +216,12 @@ Public Class Form1
 
         'Imprimimos el encabezado o titulo de la lista de materias
         '-----------------------------------------------------------------------------------------------------------------------------
-        e.Graphics.DrawString("Materia", FuenteDetalles, Brushes.Black, ImprimirForm.Punto1.Left, PosicionSinEncabezado - 30)
-        e.Graphics.DrawString("Primer parcial", FuenteDetalles, Brushes.Black, ImprimirForm.Punto2.Left, PosicionSinEncabezado - 30)
-        e.Graphics.DrawString("Segundo parcial", FuenteDetalles, Brushes.Black, ImprimirForm.Punto3.Left, PosicionSinEncabezado - 30)
-        e.Graphics.DrawString("Examen final", FuenteDetalles, Brushes.Black, ImprimirForm.Punto4.Left, PosicionSinEncabezado - 30)
-        e.Graphics.DrawString("Calificacion", FuenteDetalles, Brushes.Black, ImprimirForm.Punto5.Left, PosicionSinEncabezado - 30)
-        e.Graphics.DrawString(ImprimirForm.LineaTop.Text, FuenteDetalles, Brushes.Black, ImprimirForm.LineaTop.Left, PosicionSinEncabezado - 20)
+        e.Graphics.DrawString("Materia", FuenteDetalles, Brushes.Black, ImprimirForm.Punto1.Left, PosicionSinEncabezado - 35)
+        e.Graphics.DrawString("Primer parcial", FuenteDetalles, Brushes.Black, ImprimirForm.Punto2.Left, PosicionSinEncabezado - 35)
+        e.Graphics.DrawString("Segundo parcial", FuenteDetalles, Brushes.Black, ImprimirForm.Punto3.Left, PosicionSinEncabezado - 35)
+        e.Graphics.DrawString("Examen final", FuenteDetalles, Brushes.Black, ImprimirForm.Punto4.Left, PosicionSinEncabezado - 35)
+        e.Graphics.DrawString("Calificacion", FuenteDetalles, Brushes.Black, ImprimirForm.Punto5.Left, PosicionSinEncabezado - 35)
+        e.Graphics.DrawString(ImprimirForm.LineaTop.Text, FuenteDetalles, Brushes.Black, ImprimirForm.LineaTop.Left, PosicionSinEncabezado - 25)
 
 
 

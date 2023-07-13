@@ -422,8 +422,7 @@ Public Class Form_Orden_Compra
     Private Sub Button24_Click_1(sender As Object, e As EventArgs) Handles Button24.Click
         printLine = 0
         Contador = 0
-
-        Form_Impresion_OC.lbNumeroPagina.Text = "1"
+        Form_Impresion_OC.lbNumeroPagina.Text = "0"
         llenar_form_imprimir()
         ' Form_Impresion_OC.Show()
         'llenar_PRO_OC_imprimir()
@@ -434,7 +433,7 @@ Public Class Form_Orden_Compra
         ' PrintPreviewDialog1.Show()
         'llenar_PRO_OC_imprimir()
         'Form_Impresion_OC.Show()
-        PrintPreviewDialog1.Document = PrintDocument2
+        PrintPreviewDialog1.Document = PrintDocument4
         PrintPreviewDialog1.WindowState = FormWindowState.Maximized
         PrintPreviewDialog1.ShowDialog()
     End Sub
@@ -466,7 +465,7 @@ Public Class Form_Orden_Compra
         'Si deseamos poner un contador de páginas
         'Esta parte siempre va a salir en todas las paginas
         '---------------------------------------------------------------------------------------------
-        Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text)
+        Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
         ' e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.Pag_N.Left, e.MarginBounds.Bottom)
         'e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.lbNumeroPagina.Left, e.MarginBounds.Bottom)
         e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, 700, 1050)
@@ -576,6 +575,140 @@ estandares de calidad Solicitados."
 
     End Sub
 
+    Private Sub PrintDocument4_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument4.PrintPage
+        Dim FuenteTitulo As New Font("Microsoft Sans Serif", 7)
+        Dim FuenteSubtitulo As New Font("Microsoft Sans Serif", 7)
+        Dim FuenteNegrita As New Font("Microsoft Sans Serif", 7, FontStyle.Bold)
+        Dim FuenteDetalles As New Font("Microsoft Sans Serif", 7)
+        Dim SUBTOTAL_OC, IGV_OC, TOTAL_OC As Decimal
+        Dim CONSIDERACIONES As String
+        'Si deseamos poner un contador de páginas
+        'Esta parte siempre va a salir en todas las paginas
+        '---------------------------------------------------------------------------------------------
+        Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
+        'Form_Impresion_OC.lbNumeroPagina.Text = 1
+        e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.Pag_N.Left, e.MarginBounds.Bottom)
+        e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.lbNumeroPagina.Left, e.MarginBounds.Bottom)
+
+        'e.Graphics.DrawString(Form_Impresion_OC.Pag_N.Text, FuenteDetalles, Brushes.Black, 700, 1050)
+        'e.Graphics.DrawString(Form_Impresion_OC.lbNumeroPagina.Text, FuenteDetalles, Brushes.Black, 750, 1050)
+        'INSERTAMOS LINES DESPUES DE DATOS DE CLIENTE
+        'Dim blackPen As New Pen(Color.Black, 2) : e.Graphics.DrawLine(blackPen, 50, 465, 790, 465)
+
+        If CInt(Form_Impresion_OC.lbNumeroPagina.Text) <= 1 Then
+            Dim newImage As Image = Form_Impresion_OC.PictureBox1.Image : e.Graphics.DrawImage(newImage, Form_Impresion_OC.PictureBox1.Left, Form_Impresion_OC.PictureBox1.Top, Form_Impresion_OC.PictureBox1.Width, Form_Impresion_OC.PictureBox1.Height)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_oc.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_oc.Left, Form_Impresion_OC.Label_oc.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.oc.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.oc.Left, Form_Impresion_OC.oc.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label1.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label1.Left, Form_Impresion_OC.Label1.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label2.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label2.Left, Form_Impresion_OC.Label2.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_sres.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_sres.Left, Form_Impresion_OC.Label_sres.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.sres.Text, FuenteTitulo, Brushes.Black, Form_Impresion_OC.sres.Left, Form_Impresion_OC.sres.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_direcc.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_direcc.Left, Form_Impresion_OC.Label_direcc.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.direcc.Text, FuenteTitulo, Brushes.Black, Form_Impresion_OC.direcc.Left, Form_Impresion_OC.direcc.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_telef.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_telef.Left, Form_Impresion_OC.Label_telef.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.telefono.Text, FuenteTitulo, Brushes.Black, Form_Impresion_OC.telefono.Left, Form_Impresion_OC.telefono.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_ruc.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_ruc.Left, Form_Impresion_OC.Label_ruc.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.ruc.Text, FuenteTitulo, Brushes.Black, Form_Impresion_OC.ruc.Left, Form_Impresion_OC.ruc.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_fe.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_fe.Left, Form_Impresion_OC.Label_fe.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.fec_emision.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.fec_emision.Left, Form_Impresion_OC.fec_emision.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_f_pago.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_f_pago.Left, Form_Impresion_OC.Label_f_pago.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.f_pago.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.f_pago.Left, Form_Impresion_OC.f_pago.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_pers.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_pers.Left, Form_Impresion_OC.Label_pers.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.personal.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.personal.Left, Form_Impresion_OC.personal.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_t_venta.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_t_venta.Left, Form_Impresion_OC.Label_t_venta.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.t_venta.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.t_venta.Left, Form_Impresion_OC.t_venta.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_fp.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_fp.Left, Form_Impresion_OC.Label_fp.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.forma_pago.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.forma_pago.Left, Form_Impresion_OC.forma_pago.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_CC.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_CC.Left, Form_Impresion_OC.Label_CC.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.CCOSTO.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.CCOSTO.Left, Form_Impresion_OC.CCOSTO.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.SUBCC.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.SUBCC.Left, Form_Impresion_OC.SUBCC.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.SBCC.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.SBCC.Left, Form_Impresion_OC.SBCC.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.RQ.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.RQ.Left, Form_Impresion_OC.RQ.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.REQUE.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.REQUE.Left, Form_Impresion_OC.REQUE.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_OB.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_OB.Left, Form_Impresion_OC.Label_OB.Top)
+            e.Graphics.DrawString(Form_Impresion_OC.OBS.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.OBS.Left, Form_Impresion_OC.OBS.Top)
+            '
+            PosicionSinEncabezado = Form_Impresion_OC.P1.Top 'Reseteo el valor de esta variable si entra en esta condicion para evitar que el encabezado se posicione mal
+        End If
+        'Imprimimos el encabezado o titulo de la lista de materias
+        '-----------------------------------------------------------------------------------------------------------------------------
+        e.Graphics.DrawString("ITEM", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P1.Left, PosicionSinEncabezado - 30)
+        e.Graphics.DrawString("DESCRIPCION", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P2.Left, PosicionSinEncabezado - 30)
+        e.Graphics.DrawString("UND", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P3.Left, PosicionSinEncabezado - 30)
+        e.Graphics.DrawString("CANTIDAD", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P4.Left, PosicionSinEncabezado - 30)
+        e.Graphics.DrawString("P.UNTIARIO", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P5.Left, PosicionSinEncabezado - 30)
+        e.Graphics.DrawString("SUB TOTAL", FuenteNegrita, Brushes.Black, Form_Impresion_OC.P6.Left, PosicionSinEncabezado - 30)
+        e.Graphics.DrawString(Form_Impresion_OC.lineatop.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.lineatop.Left, PosicionSinEncabezado - 20)
+
+        'Imprimimos los detalles del reporte, es decir el listado de materias
+        '-----------------------------------------------------------------------------------------------------------------------------
+        Dim startX As Integer = Form_Impresion_OC.P1.Left 'Tomamos la posicion horinzontal de la letra 'Punto1'
+        Dim startY As Integer = PosicionSinEncabezado 'Tomamos la posicion vertical de la letra 'Punto1'
+        Dim item As Integer = 1
+        Do While printLine < Form_Impresion_OC.DataGridView1.Rows.Count
+
+
+            e.Graphics.DrawString(item, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P1.Left, startY)
+            e.Graphics.DrawString(Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(1).Value.ToString, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P2.Left, startY)
+            e.Graphics.DrawString(Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(2).Value.ToString, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P3.Left, startY)
+            e.Graphics.DrawString(Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(3).Value.ToString, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P4.Left, startY)
+            e.Graphics.DrawString(Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(4).Value.ToString, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P5.Left, startY)
+            e.Graphics.DrawString(Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(5).Value.ToString, FuenteDetalles, Brushes.Black, Form_Impresion_OC.P6.Left, startY)
+            Dim val_sub As Decimal = Form_Impresion_OC.DataGridView1.Rows(printLine).Cells(5).Value
+            'Aqui estoy usando un tipo de letras mas grande 'LabelCodigo' mas grande que 'Punto1' para crear mas espacio entre filas
+            '----------------------------------------------------------------------------------
+            startY += Form_Impresion_OC.Label_OB.Height
+
+            printLine += 1
+            Contador += 1
+            item += 1
+            SUBTOTAL_OC += val_sub
+            If startY + Form_Impresion_OC.Pag_N.Height > e.MarginBounds.Bottom Then
+                'Esta parte se activa solo si 'startY' que es la posicion vertical almacenada supera el borde inferior de la pagina
+                'Este se reinicia con cada pagina necesitada
+                'Form_Impresion_OC.lbNumeroPagina.Text = CInt(Form_Impresion_OC.lbNumeroPagina.Text) + 1
+                e.HasMorePages = True
+                Exit Do
+
+            End If
+
+        Loop
+
+        IGV_OC = SUBTOTAL_OC * porc_igv
+        TOTAL_OC = SUBTOTAL_OC + IGV_OC
+
+        Form_Impresion_OC.SUBTOTAL.Text = SUBTOTAL_OC
+        Form_Impresion_OC.IGV.Text = IGV_OC
+        Form_Impresion_OC.TOTAL.Text = TOTAL_OC
+        CONSIDERACIONES = "*El proveedor esta oblidado a contar con los seguros contra todo riesgo SCTR de Salud 
+y Pension de su personal encargado de visiar y realizar trabajos correspondientes a esta Orden de Compra.
+*El proveedor debera contar con personal especializado en la actividad asignada, cualquier incidente por 
+falta de conocimiento o capacitacion sera responsabilidad del proveedor.
+*El proveedor debera contar con las respectivas herramientas de trabajo necesarias para la actividad al
+cual se les asigna esta Orden de Compra.
+*Los desechos generados por la actividad asignada sera responsabilidad del proveedor, de no eliminarse
+sera asignado un costo de eliminacion, el cual sera descontado de la presente orden de compra.
+*La presente Orden de Compra estara sujeto a modificacion si el proveedor no cumple con los 
+estandares de calidad Solicitados."
+        Form_Impresion_OC.CONSIDERACIONES.Text = CONSIDERACIONES
+        'Con el contador solamente imprimimos la parte final del reporte si ha alcanzado el total de registros
+        'Si deseamos repetir la parte final del reporte en cada pagina, debemos quitar en contador
+        ''Imprimimos los valores que salen despues del datagridview al final del reporte
+
+        If Contador >= Form_Impresion_OC.DataGridView1.Rows.Count Then
+            e.Graphics.DrawString(Form_Impresion_OC.LINEAFONDO.Text, FuenteDetalles, Brushes.Black, Form_Impresion_OC.LINEAFONDO.Left, startY)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_SUBTOTAL.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_SUBTOTAL.Left, startY + 40)
+            e.Graphics.DrawString(Form_Impresion_OC.SUBTOTAL.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.SUBTOTAL.Left, startY + 40)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_IGV.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_IGV.Left, startY + 60)
+            e.Graphics.DrawString(Form_Impresion_OC.IGV.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.IGV.Left, startY + 60)
+            e.Graphics.DrawString(Form_Impresion_OC.Label_TOTAL.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.Label_TOTAL.Left, startY + 80)
+            e.Graphics.DrawString(Form_Impresion_OC.TOTAL.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.TOTAL.Left, startY + 80)
+            Dim newImage2 As Image = Form_Impresion_OC.PictureBox2.Image : e.Graphics.DrawImage(newImage2, Form_Impresion_OC.P3.Left, startY + 100, Form_Impresion_OC.PictureBox2.Width, Form_Impresion_OC.PictureBox2.Height)
+            e.Graphics.DrawString(Form_Impresion_OC.CONSIDERACIONES.Text, FuenteNegrita, Brushes.Black, Form_Impresion_OC.P1.Left, startY + 300)
+        End If
+
+    End Sub
+
     Dim xlibro As Microsoft.Office.Interop.Excel.Application
     Dim strRutaExcel As String
     Dim da As SqlClient.SqlDataAdapter, cb As SqlClient.SqlCommandBuilder
@@ -629,6 +762,9 @@ estandares de calidad Solicitados."
         'ListView1.AllowColumnReorder = True
         ListView1.GridLines = True
         DataGridView1.AllowUserToAddRows = False
+        Dim printLine As Integer = 0
+        Dim Contador As Integer = 0
+        Dim PosicionSinEncabezado As Integer = Form_Impresion_OC.P1.Top
 
     End Sub
 
@@ -962,10 +1098,9 @@ estandares de calidad Solicitados."
                         Form_Reg_SRV_SQL.conexion.Close()
 
 
-                        MessageBox.Show("Registro Guardado", "ZITRO")
+
                         'buscar_copiar()
-                        ListView1.Visible = False
-                        DataGridView1.Visible = True
+
 
                         'llenar_grid()
                         'facturas()
@@ -975,7 +1110,10 @@ estandares de calidad Solicitados."
 
                 End If
             Next
+            MessageBox.Show("Registro Guardado", "ZITRO")
             llenar_PRO_OC()
+            ListView1.Visible = False
+            DataGridView1.Visible = True
         Catch ex As Exception
 
         End Try

@@ -135,6 +135,7 @@ Partial Class Form_Orden_Compra
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument2 = New System.Drawing.Printing.PrintDocument()
         Me.PrintDocument3 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintDocument4 = New System.Drawing.Printing.PrintDocument()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgv2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -1130,6 +1131,9 @@ Partial Class Form_Orden_Compra
         'PrintDocument2
         '
         '
+        'PrintDocument4
+        '
+        '
         'Form_Orden_Compra
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
@@ -1293,4 +1297,5 @@ Partial Class Form_Orden_Compra
     Friend WithEvents PrintDialog1 As PrintDialog
     Friend WithEvents PrintDocument2 As Printing.PrintDocument
     Friend WithEvents PrintDocument3 As Printing.PrintDocument
+    Friend WithEvents PrintDocument4 As Printing.PrintDocument
 End Class

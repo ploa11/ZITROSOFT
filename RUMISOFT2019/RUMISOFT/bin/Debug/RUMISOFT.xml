@@ -22,6 +22,11 @@ RUMISOFT
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:RUMISOFT.My.Resources.Resources.firma_zitro2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:RUMISOFT.My.Resources.Resources.logo">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
