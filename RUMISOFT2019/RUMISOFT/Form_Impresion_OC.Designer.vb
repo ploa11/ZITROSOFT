@@ -514,7 +514,7 @@ Partial Class Form_Impresion_OC
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.RUMISOFT.My.Resources.Resources.firma_zitro2
-        Me.PictureBox2.Location = New System.Drawing.Point(344, 637)
+        Me.PictureBox2.Location = New System.Drawing.Point(411, 638)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(119, 68)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom

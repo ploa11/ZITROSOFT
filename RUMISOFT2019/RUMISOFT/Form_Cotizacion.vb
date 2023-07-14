@@ -1,9 +1,11 @@
-﻿'Imports System.Windows.Controls
+﻿Imports System.Drawing.Printing
+'Imports System.Windows.Controls
 'Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports System.IO
-Imports Microsoft.Office.Interop.Excel
+'Imports Microsoft.Office.Interop.Excel
 Imports Finisar.SQLite
 Imports System.Text
+Imports System.Windows.Controls
 'Imports System.Windows.Controls
 
 Public Class Form_Cotizacion
@@ -32,6 +34,9 @@ Public Class Form_Cotizacion
     Dim usu_gen, usu_rev, usu_aprob As String
     Dim n_carp As String
     Dim j As Integer
+    Dim printLine As Integer = 0
+    Dim Contador As Integer = 0
+    Dim PosicionSinEncabezado As Integer = Form_Imprimir_Coti.P1.Top
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         accion = "guardar"
@@ -87,6 +92,7 @@ Public Class Form_Cotizacion
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         utilidad = 0
         igv_comides = 0
+        'P_U = TextBox14.Text
         item2()
         'Button8.Enabled = False
         GroupBox5.Enabled = True
@@ -190,6 +196,7 @@ Public Class Form_Cotizacion
         Button9.Enabled = True
         Button11.Enabled = True
         Button12.Enabled = True
+        j = 0
 
     End Sub
 
@@ -241,6 +248,7 @@ Public Class Form_Cotizacion
                 rest = item.SubItems(4).Text
                 rest_util = item.SubItems(6).Text
                 Me.ListView1.Items.Remove(item)
+                j -= 1
                 ' ListView1.Items.Remove(ListView1.Items.Item(j))
             End If
 
@@ -320,6 +328,7 @@ Public Class Form_Cotizacion
                 porc_util = Val(TextBox26.Text) / 100
                 TOT_SI = (CANT * P_U)
                 TextBox16.Text = TOT_SI
+
                 'Button8.Enabled = True
             Else
                 P_U = Val(TextBox14.Text)
@@ -367,8 +376,19 @@ Public Class Form_Cotizacion
 
     End Sub
 
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        printLine = 0
+        Contador = 0
+        Form_Imprimir_Coti.lbNumeroPagina.Text = "0"
+    End Sub
+
     Private Sub Form_Cotizacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' llenar_grid()
+        j = 0
         TextBox22.Text = 18
         TextBox26.Text = 8
         TextBox27.Text = "UND"
@@ -476,14 +496,16 @@ Public Class Form_Cotizacion
     End Sub
 
     Private Sub item2()
+
         Try
+            j += 1
             Dim linea As New ListViewItem(j)
             preg = MsgBox("Desea agregar el item en COTIZACION", vbYesNo)
             If preg = vbYes Then
 
                 linea.SubItems.Add(TextBox15.Text)
                 linea.SubItems.Add(TextBox18.Text)
-                linea.SubItems.Add(TextBox14.Text)
+                linea.SubItems.Add(P_U)
                 'linea.SubItems.Add(P_U)
                 linea.SubItems.Add(TextBox16.Text)
                 'linea.SubItems.Add("PPPP")
@@ -626,10 +648,10 @@ Public Class Form_Cotizacion
     Private Sub TextBox14_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox14.KeyUp
         Dim PU, CANT, TOT As Double
         Try
-            PU = Val(TextBox14.Text)
+            P_U = Val(TextBox14.Text)
             CANT = Val(TextBox15.Text)
             porc_util = Val(TextBox26.Text) / 100
-            TOT = CANT * PU
+            TOT = CANT * P_U
             TextBox16.Text = TOT
             'Button8.Enabled = True
         Catch ex As Exception
@@ -1805,4 +1827,78 @@ Public Class Form_Cotizacion
     Private Sub TextBox15_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox15.KeyUp
 
     End Sub
+
+    Sub llenar_form_imprimir()
+        Dim cod_editar, cod_oc_editar, cod_rq_editar, cod_cc_editar, cod_scc_editar, descrip_editar As String
+        Dim cant_EDITAR, prec_unit_editar, prec_total_editar, igv_editar As Integer
+        accion = "guardar"
+        Form_Imprimir_Coti.sres.Text = TextBox3.Text
+        Form_Imprimir_Coti.ruc.Text = TextBox2.Text
+        Form_Imprimir_Coti.direcc.Text = TextBox4.Text
+        Form_Imprimir_Coti.telefono.Text = TextBox5.Text
+        Form_Imprimir_Coti.fec_emision.Text = UCase(DateTimePicker1.Text)
+        Form_Imprimir_Coti.CONTACTO.Text = TextBox1.Text + " " & +TextBox9.Text
+        Form_Imprimir_Coti.USUARIO.Text = TextBox13.Text + " " & +TextBox9.Text
+        Form_Imprimir_Coti.UTIL.Text = TextBox23.Text
+        Form_Imprimir_Coti.f_venc.Text = UCase(DateTimePicker2.Text)
+        Form_Imprimir_Coti.oc.Text = TextBox23.Text
+        Form_Imprimir_Coti.OT.Text = TextBox7.Text
+        Form_Imprimir_Coti.SBCC.Text = TextBox8.Text
+        Form_Imprimir_Coti.LOCAL.Text = TextBox1.Text
+        Form_Imprimir_Coti.OBS.Text = TextBox25.Text
+        Try
+            sql = "select COD AS [ITEM], DESCRIP AS [DESCRIPCION], UND, CANTIDAD, PREC_UNIT AS [P.UNITARIO], PREC_TOTAL AS [SUBTOTAL] from T_OC_ITEMS WHERE COD_OC='" + TextBox23.Text + "'"
+            Form_Reg_SRV_SQL.conectar()
+            da = New SqlClient.SqlDataAdapter(sql, Form_Reg_SRV_SQL.conexion)
+            cb = New SqlClient.SqlCommandBuilder(da)
+            ds = New DataSet
+            da.Fill(ds, "T_OC_ITEMS")
+            Form_Impresion_OC.DataGridView1.DataSource = ds
+            Form_Impresion_OC.DataGridView1.DataMember = "T_OC_ITEMS"
+            Form_Reg_SRV_SQL.conexion.Close()
+        Catch ex As Exception
+            MessageBox.Show("Error al mostrar los datos", "ZITRO")
+        End Try
+        ' For i As Integer = 0 To DataGridView1.Rows.Count - 1
+        'cod_editar = Trim(DataGridView1.Rows(i).Cells(0).Value)
+        'cod_oc_editar = Trim(DataGridView1.Rows(i).Cells(1).Value)
+        'cod_rq_editar = Trim(DataGridView1.Rows(i).Cells(2).Value)
+        'cod_cc_editar = Trim(DataGridView1.Rows(i).Cells(3).Value)
+        'cod_scc_editar = Trim(DataGridView1.Rows(i).Cells(4).Value)
+        'cant_EDITAR = (DataGridView1.Rows(i).Cells(5).Value)
+        'descrip_editar = Trim(DataGridView1.Rows(i).Cells(6).Value)
+        'prec_unit_editar = (DataGridView1.Rows(i).Cells(7).Value)
+        'prec_total_editar = prec_unit_editar * cant_EDITAR
+        'igv_editar = prec_total_editar * 0.18
+
+
+        'auxi_editar = MsgBox("¿ESTA SEGURO DE ACTUALIZAR ESTE REGISTRO?", MsgBoxStyle.YesNo, "ACTUALIZAR")
+
+
+        'sql = "INSERT INTO T_COTI_ITEMS (COD,COD_COTI,CANTIDAD,DESCRIP,PREC_UNIT,PREC_TOTAL,IGV) VALUES('" & cod & "','" & TextBox23.Text & "','" & CANTIDAD & "','" & descrip & "','" & prec_unit & "','" & prec_total & "','" & igv & "')"
+        ' sql = "UPDATE  T_COTI_ITEMS SET(CANTIDAD,DESCRIP,PREC_UNIT,PREC_TOTAL,IGV) VALUES('" & cod & "','" & TextBox23.Text & "','" & CANTIDAD & "','" & descrip & "','" & prec_unit & "','" & prec_total & "','" & igv & "')"
+        'sql = "UPDATE T_OC_ITEMS SET CANTIDAD='" & UCase(cant_EDITAR) & "', DESCRIP= '" & UCase(descrip_editar) & "', PREC_UNIT='" & prec_unit_editar & "', PREC_TOTAL='" & prec_total_editar & "', IGV= '" & igv_editar & "' WHERE COD='" & cod_editar & "'"
+        ' Form_Reg_SRV_SQL.conectar()
+        ' com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
+        ' res = com.ExecuteNonQuery
+        ' Form_Reg_SRV_SQL.conexion.Close()
+        ' Reg_SRV_SQL.conexion.Close()
+        'Dim guardar As New MySQLDriverCS.MySQLCommand
+        'guardar.Connection = cnn
+        'guardar.CommandType = CommandType.StoredProcedure
+        'guardar.CommandText = "UPDATE detalle_menu SET cod_comp='" & comp & "',ingredientes = '" & ingr & "', medida = '" & medi & "',cantidad='" & cant & "',precio = '" & prec & "' WHERE cod_comp='" & comp & "'"
+        ' guardar.ExecuteNonQuery()
+
+        ' MsgBox("DATOS ACTUALIZADOS CORRECTAMENTE", MsgBoxStyle.Information, "ACTUALIZACION")
+
+        'Else
+        'MsgBox("DATOS NO ACTUALIZADOS", MsgBoxStyle.Information, "ACTUALIZACION")
+        'End If
+        'Next
+        ' DataGridView1.Enabled = False
+        ' MsgBox("DATOS ACTUALIZADOS CORRECTAMENTE", MsgBoxStyle.Information, "ACTUALIZACION")
+        'Button17.Enabled = False
+        ' llenar_PRO_OC()
+    End Sub
+
 End Class

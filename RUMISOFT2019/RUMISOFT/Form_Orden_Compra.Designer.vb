@@ -120,8 +120,9 @@ Partial Class Form_Orden_Compra
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Button23 = New System.Windows.Forms.Button()
         Me.Button19 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button25 = New System.Windows.Forms.Button()
         Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
@@ -148,7 +149,7 @@ Partial Class Form_Orden_Compra
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(14, 21)
+        Me.Label1.Location = New System.Drawing.Point(15, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(46, 15)
         Me.Label1.TabIndex = 0
@@ -156,9 +157,9 @@ Partial Class Form_Orden_Compra
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(69, 17)
+        Me.TextBox1.Location = New System.Drawing.Point(13, 24)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(185, 20)
         Me.TextBox1.TabIndex = 1
         '
         'DataGridView1
@@ -172,32 +173,33 @@ Partial Class Form_Orden_Compra
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(4, 29)
+        Me.Label2.Location = New System.Drawing.Point(401, 11)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 15)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Proveedor:"
+        Me.Label2.Visible = False
         '
         'TextBox2
         '
         Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(212, 21)
+        Me.TextBox2.Location = New System.Drawing.Point(8, 32)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(112, 20)
         Me.TextBox2.TabIndex = 4
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(69, 13)
+        Me.Button1.Location = New System.Drawing.Point(681, 32)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(84, 45)
+        Me.Button1.Size = New System.Drawing.Size(152, 22)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Buscar Proveedor"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(975, 16)
+        Me.Button2.Location = New System.Drawing.Point(975, 20)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(98, 24)
         Me.Button2.TabIndex = 6
@@ -206,9 +208,9 @@ Partial Class Form_Orden_Compra
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(109, 13)
+        Me.Button3.Location = New System.Drawing.Point(11, 32)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 27)
+        Me.Button3.Size = New System.Drawing.Size(176, 22)
         Me.Button3.TabIndex = 7
         Me.Button3.Text = "Buscar OC"
         Me.Button3.UseVisualStyleBackColor = True
@@ -216,39 +218,39 @@ Partial Class Form_Orden_Compra
         'TextBox3
         '
         Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(392, 22)
+        Me.TextBox3.Location = New System.Drawing.Point(126, 32)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(206, 20)
         Me.TextBox3.TabIndex = 8
         '
         'TextBox4
         '
         Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(556, 20)
+        Me.TextBox4.Location = New System.Drawing.Point(341, 32)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(195, 20)
         Me.TextBox4.TabIndex = 9
         '
         'TextBox5
         '
         Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(731, 22)
+        Me.TextBox5.Location = New System.Drawing.Point(545, 33)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(129, 20)
         Me.TextBox5.TabIndex = 10
         '
         'TextBox6
         '
         Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(212, 74)
+        Me.TextBox6.Location = New System.Drawing.Point(8, 72)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(112, 20)
         Me.TextBox6.TabIndex = 11
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(156, 25)
+        Me.Label3.Location = New System.Drawing.Point(9, 17)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(37, 15)
         Me.Label3.TabIndex = 12
@@ -256,22 +258,22 @@ Partial Class Form_Orden_Compra
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(234, 16)
+        Me.TextBox7.Location = New System.Drawing.Point(214, 24)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(182, 20)
         Me.TextBox7.TabIndex = 13
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(421, 16)
+        Me.TextBox8.Location = New System.Drawing.Point(416, 24)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(164, 20)
         Me.TextBox8.TabIndex = 14
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(181, 21)
+        Me.Label4.Location = New System.Drawing.Point(215, 8)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 15)
         Me.Label4.TabIndex = 15
@@ -280,7 +282,7 @@ Partial Class Form_Orden_Compra
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(340, 22)
+        Me.Label5.Location = New System.Drawing.Point(416, 7)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 15)
         Me.Label5.TabIndex = 16
@@ -289,7 +291,7 @@ Partial Class Form_Orden_Compra
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(318, 25)
+        Me.Label6.Location = New System.Drawing.Point(126, 16)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(70, 15)
         Me.Label6.TabIndex = 17
@@ -298,7 +300,7 @@ Partial Class Form_Orden_Compra
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(662, 25)
+        Me.Label7.Location = New System.Drawing.Point(545, 15)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(59, 15)
         Me.Label7.TabIndex = 18
@@ -307,7 +309,7 @@ Partial Class Form_Orden_Compra
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(498, 25)
+        Me.Label8.Location = New System.Drawing.Point(340, 16)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 15)
         Me.Label8.TabIndex = 19
@@ -316,11 +318,12 @@ Partial Class Form_Orden_Compra
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(2, 75)
+        Me.Label9.Location = New System.Drawing.Point(488, 12)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(51, 15)
         Me.Label9.TabIndex = 20
         Me.Label9.Text = "Contacto:"
+        Me.Label9.Visible = False
         '
         'DateTimePicker1
         '
@@ -331,7 +334,7 @@ Partial Class Form_Orden_Compra
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(665, 13)
+        Me.Button4.Location = New System.Drawing.Point(695, 18)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(95, 27)
         Me.Button4.TabIndex = 23
@@ -340,9 +343,9 @@ Partial Class Form_Orden_Compra
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(64, 130)
+        Me.Button5.Location = New System.Drawing.Point(11, 137)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 28)
+        Me.Button5.Size = New System.Drawing.Size(176, 25)
         Me.Button5.TabIndex = 24
         Me.Button5.Text = "Salir"
         Me.Button5.UseVisualStyleBackColor = True
@@ -359,7 +362,7 @@ Partial Class Form_Orden_Compra
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(159, 77)
+        Me.Label11.Location = New System.Drawing.Point(7, 57)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(52, 15)
         Me.Label11.TabIndex = 27
@@ -368,15 +371,15 @@ Partial Class Form_Orden_Compra
         'TextBox9
         '
         Me.TextBox9.Enabled = False
-        Me.TextBox9.Location = New System.Drawing.Point(392, 74)
+        Me.TextBox9.Location = New System.Drawing.Point(126, 73)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(206, 20)
         Me.TextBox9.TabIndex = 26
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(320, 77)
+        Me.Label12.Location = New System.Drawing.Point(127, 57)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(54, 15)
         Me.Label12.TabIndex = 28
@@ -385,7 +388,7 @@ Partial Class Form_Orden_Compra
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(498, 76)
+        Me.Label13.Location = New System.Drawing.Point(341, 59)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(29, 15)
         Me.Label13.TabIndex = 29
@@ -394,25 +397,25 @@ Partial Class Form_Orden_Compra
         'TextBox10
         '
         Me.TextBox10.Enabled = False
-        Me.TextBox10.Location = New System.Drawing.Point(556, 70)
+        Me.TextBox10.Location = New System.Drawing.Point(341, 74)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox10.Size = New System.Drawing.Size(195, 20)
         Me.TextBox10.TabIndex = 30
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(69, 65)
+        Me.Button6.Location = New System.Drawing.Point(681, 74)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(84, 46)
+        Me.Button6.Size = New System.Drawing.Size(152, 24)
         Me.Button6.TabIndex = 31
         Me.Button6.Text = "Buscar Contacto"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(69, 118)
+        Me.Button7.Location = New System.Drawing.Point(681, 113)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(84, 44)
+        Me.Button7.Size = New System.Drawing.Size(152, 24)
         Me.Button7.TabIndex = 39
         Me.Button7.Text = "Buscar Usuario"
         Me.Button7.UseVisualStyleBackColor = True
@@ -420,15 +423,15 @@ Partial Class Form_Orden_Compra
         'TextBox11
         '
         Me.TextBox11.Enabled = False
-        Me.TextBox11.Location = New System.Drawing.Point(556, 129)
+        Me.TextBox11.Location = New System.Drawing.Point(341, 118)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox11.Size = New System.Drawing.Size(195, 20)
         Me.TextBox11.TabIndex = 38
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(498, 133)
+        Me.Label14.Location = New System.Drawing.Point(342, 103)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(38, 15)
         Me.Label14.TabIndex = 37
@@ -437,7 +440,7 @@ Partial Class Form_Orden_Compra
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(320, 134)
+        Me.Label15.Location = New System.Drawing.Point(128, 99)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(54, 15)
         Me.Label15.TabIndex = 36
@@ -446,7 +449,7 @@ Partial Class Form_Orden_Compra
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(159, 134)
+        Me.Label16.Location = New System.Drawing.Point(8, 100)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(52, 15)
         Me.Label16.TabIndex = 35
@@ -455,26 +458,27 @@ Partial Class Form_Orden_Compra
         'TextBox12
         '
         Me.TextBox12.Enabled = False
-        Me.TextBox12.Location = New System.Drawing.Point(392, 130)
+        Me.TextBox12.Location = New System.Drawing.Point(126, 117)
         Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox12.Size = New System.Drawing.Size(206, 20)
         Me.TextBox12.TabIndex = 34
         '
         'Label17
         '
         Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(4, 137)
+        Me.Label17.Location = New System.Drawing.Point(582, 12)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(65, 15)
         Me.Label17.TabIndex = 33
         Me.Label17.Text = "Beneficiario:"
+        Me.Label17.Visible = False
         '
         'TextBox13
         '
         Me.TextBox13.Enabled = False
-        Me.TextBox13.Location = New System.Drawing.Point(212, 130)
+        Me.TextBox13.Location = New System.Drawing.Point(7, 117)
         Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox13.Size = New System.Drawing.Size(113, 20)
         Me.TextBox13.TabIndex = 32
         '
         'ListView1
@@ -530,9 +534,9 @@ Partial Class Form_Orden_Compra
         '
         Me.dgv2.BackgroundColor = System.Drawing.SystemColors.ButtonFace
         Me.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv2.Location = New System.Drawing.Point(7, 46)
+        Me.dgv2.Location = New System.Drawing.Point(7, 51)
         Me.dgv2.Name = "dgv2"
-        Me.dgv2.Size = New System.Drawing.Size(1066, 97)
+        Me.dgv2.Size = New System.Drawing.Size(1066, 101)
         Me.dgv2.TabIndex = 52
         '
         'TextBox16
@@ -605,7 +609,7 @@ Partial Class Form_Orden_Compra
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(708, 28)
+        Me.Label18.Location = New System.Drawing.Point(521, 16)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(151, 15)
         Me.Label18.TabIndex = 54
@@ -613,14 +617,14 @@ Partial Class Form_Orden_Compra
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(867, 23)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(523, 31)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker2.TabIndex = 53
         '
         'TextBox17
         '
-        Me.TextBox17.Location = New System.Drawing.Point(105, 23)
+        Me.TextBox17.Location = New System.Drawing.Point(6, 34)
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.Size = New System.Drawing.Size(294, 20)
         Me.TextBox17.TabIndex = 65
@@ -628,7 +632,7 @@ Partial Class Form_Orden_Compra
         'Label23
         '
         Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(3, 27)
+        Me.Label23.Location = New System.Drawing.Point(4, 16)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(95, 15)
         Me.Label23.TabIndex = 64
@@ -637,7 +641,7 @@ Partial Class Form_Orden_Compra
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(405, 28)
+        Me.Label24.Location = New System.Drawing.Point(320, 16)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(169, 15)
         Me.Label24.TabIndex = 66
@@ -647,9 +651,9 @@ Partial Class Form_Orden_Compra
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"PRECIO", "CALIDAD", "EN STOCK", "PROVEEDOR UNICO", "OTRO"})
-        Me.ComboBox2.Location = New System.Drawing.Point(581, 24)
+        Me.ComboBox2.Location = New System.Drawing.Point(323, 31)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 23)
+        Me.ComboBox2.Size = New System.Drawing.Size(166, 23)
         Me.ComboBox2.TabIndex = 67
         '
         'TextBox18
@@ -661,9 +665,9 @@ Partial Class Form_Orden_Compra
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(29, 20)
+        Me.Button9.Location = New System.Drawing.Point(19, 13)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(67, 42)
+        Me.Button9.Size = New System.Drawing.Size(158, 22)
         Me.Button9.TabIndex = 69
         Me.Button9.Text = "Generar Items OC"
         Me.Button9.UseVisualStyleBackColor = True
@@ -757,7 +761,6 @@ Partial Class Form_Orden_Compra
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.TextBox9)
-        Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -767,8 +770,6 @@ Partial Class Form_Orden_Compra
         Me.GroupBox1.Controls.Add(Me.TextBox3)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
         Me.GroupBox1.Name = "GroupBox1"
@@ -786,7 +787,7 @@ Partial Class Form_Orden_Compra
         Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Location = New System.Drawing.Point(10, 240)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1073, 62)
+        Me.GroupBox2.Size = New System.Drawing.Size(891, 62)
         Me.GroupBox2.TabIndex = 80
         Me.GroupBox2.TabStop = False
         '
@@ -821,7 +822,7 @@ Partial Class Form_Orden_Compra
         Me.GroupBox3.Controls.Add(Me.Label1)
         Me.GroupBox3.Location = New System.Drawing.Point(10, 308)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(1081, 205)
+        Me.GroupBox3.Size = New System.Drawing.Size(1081, 195)
         Me.GroupBox3.TabIndex = 81
         Me.GroupBox3.TabStop = False
         '
@@ -837,7 +838,7 @@ Partial Class Form_Orden_Compra
         '
         'Button20
         '
-        Me.Button20.Location = New System.Drawing.Point(779, 13)
+        Me.Button20.Location = New System.Drawing.Point(796, 18)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(95, 27)
         Me.Button20.TabIndex = 83
@@ -864,7 +865,7 @@ Partial Class Form_Orden_Compra
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(547, 14)
+        Me.Button10.Location = New System.Drawing.Point(594, 18)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(95, 27)
         Me.Button10.TabIndex = 79
@@ -895,45 +896,45 @@ Partial Class Form_Orden_Compra
         '
         'Button22
         '
-        Me.Button22.Location = New System.Drawing.Point(109, 94)
+        Me.Button22.Location = New System.Drawing.Point(11, 118)
         Me.Button22.Name = "Button22"
-        Me.Button22.Size = New System.Drawing.Size(75, 28)
+        Me.Button22.Size = New System.Drawing.Size(176, 20)
         Me.Button22.TabIndex = 90
         Me.Button22.Text = "Eliminar"
         Me.Button22.UseVisualStyleBackColor = True
         '
         'Button21
         '
-        Me.Button21.Location = New System.Drawing.Point(109, 45)
+        Me.Button21.Location = New System.Drawing.Point(11, 54)
         Me.Button21.Name = "Button21"
-        Me.Button21.Size = New System.Drawing.Size(75, 42)
+        Me.Button21.Size = New System.Drawing.Size(176, 20)
         Me.Button21.TabIndex = 89
         Me.Button21.Text = "OC Referencia"
         Me.Button21.UseVisualStyleBackColor = True
         '
         'Button15
         '
-        Me.Button15.Location = New System.Drawing.Point(10, 13)
+        Me.Button15.Location = New System.Drawing.Point(10, 11)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(75, 27)
+        Me.Button15.Size = New System.Drawing.Size(177, 22)
         Me.Button15.TabIndex = 87
         Me.Button15.Text = "Nuevo"
         Me.Button15.UseVisualStyleBackColor = True
         '
         'Button16
         '
-        Me.Button16.Location = New System.Drawing.Point(10, 44)
+        Me.Button16.Location = New System.Drawing.Point(11, 96)
         Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(75, 46)
+        Me.Button16.Size = New System.Drawing.Size(176, 22)
         Me.Button16.TabIndex = 87
         Me.Button16.Text = "Editar Modificar"
         Me.Button16.UseVisualStyleBackColor = True
         '
         'Button14
         '
-        Me.Button14.Location = New System.Drawing.Point(11, 95)
+        Me.Button14.Location = New System.Drawing.Point(11, 74)
         Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(75, 27)
+        Me.Button14.Size = New System.Drawing.Size(176, 21)
         Me.Button14.TabIndex = 86
         Me.Button14.Text = "Limpiar"
         Me.Button14.UseVisualStyleBackColor = True
@@ -958,19 +959,19 @@ Partial Class Form_Orden_Compra
         'Button11
         '
         Me.Button11.Enabled = False
-        Me.Button11.Location = New System.Drawing.Point(111, 20)
+        Me.Button11.Location = New System.Drawing.Point(19, 35)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(67, 40)
+        Me.Button11.Size = New System.Drawing.Size(158, 23)
         Me.Button11.TabIndex = 83
-        Me.Button11.Text = " Crear OC"
+        Me.Button11.Text = " Crear OC en EXCEL"
         Me.Button11.UseVisualStyleBackColor = True
         '
         'Button12
         '
         Me.Button12.Enabled = False
-        Me.Button12.Location = New System.Drawing.Point(29, 68)
+        Me.Button12.Location = New System.Drawing.Point(19, 58)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(67, 43)
+        Me.Button12.Size = New System.Drawing.Size(158, 23)
         Me.Button12.TabIndex = 84
         Me.Button12.Text = "Crear Directorio"
         Me.Button12.UseVisualStyleBackColor = True
@@ -978,9 +979,9 @@ Partial Class Form_Orden_Compra
         'Button13
         '
         Me.Button13.Enabled = False
-        Me.Button13.Location = New System.Drawing.Point(29, 118)
+        Me.Button13.Location = New System.Drawing.Point(19, 81)
         Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(67, 40)
+        Me.Button13.Size = New System.Drawing.Size(158, 21)
         Me.Button13.TabIndex = 85
         Me.Button13.Text = "Abrir Carpeta"
         Me.Button13.UseVisualStyleBackColor = True
@@ -989,55 +990,66 @@ Partial Class Form_Orden_Compra
         '
         Me.GroupBox5.Controls.Add(Me.Button23)
         Me.GroupBox5.Controls.Add(Me.Button19)
+        Me.GroupBox5.Controls.Add(Me.Button25)
         Me.GroupBox5.Controls.Add(Me.Button9)
+        Me.GroupBox5.Controls.Add(Me.Button24)
         Me.GroupBox5.Controls.Add(Me.Button17)
         Me.GroupBox5.Controls.Add(Me.Button13)
         Me.GroupBox5.Controls.Add(Me.Button11)
         Me.GroupBox5.Controls.Add(Me.Button12)
-        Me.GroupBox5.Location = New System.Drawing.Point(899, 514)
+        Me.GroupBox5.Location = New System.Drawing.Point(899, 509)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(193, 218)
+        Me.GroupBox5.Size = New System.Drawing.Size(193, 223)
         Me.GroupBox5.TabIndex = 86
         Me.GroupBox5.TabStop = False
         '
         'Button23
         '
         Me.Button23.Enabled = False
-        Me.Button23.Location = New System.Drawing.Point(111, 118)
+        Me.Button23.Location = New System.Drawing.Point(19, 193)
         Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(67, 40)
+        Me.Button23.Size = New System.Drawing.Size(158, 21)
         Me.Button23.TabIndex = 89
         Me.Button23.Text = "Eliminar Item"
         Me.Button23.UseVisualStyleBackColor = True
         '
         'Button19
         '
-        Me.Button19.Location = New System.Drawing.Point(60, 161)
+        Me.Button19.Location = New System.Drawing.Point(19, 126)
         Me.Button19.Name = "Button19"
-        Me.Button19.Size = New System.Drawing.Size(86, 51)
+        Me.Button19.Size = New System.Drawing.Size(158, 23)
         Me.Button19.TabIndex = 40
         Me.Button19.Text = "GENERAR OC REFERENCIA"
         Me.Button19.UseVisualStyleBackColor = True
         Me.Button19.Visible = False
         '
-        'Button17
+        'Button25
         '
-        Me.Button17.Enabled = False
-        Me.Button17.Location = New System.Drawing.Point(110, 66)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(68, 45)
-        Me.Button17.TabIndex = 88
-        Me.Button17.Text = "Actualizar Items"
-        Me.Button17.UseVisualStyleBackColor = True
+        Me.Button25.Location = New System.Drawing.Point(19, 170)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(158, 23)
+        Me.Button25.TabIndex = 121
+        Me.Button25.Text = "IMPRIMIR"
+        Me.Button25.UseVisualStyleBackColor = True
         '
         'Button24
         '
-        Me.Button24.Location = New System.Drawing.Point(249, 703)
+        Me.Button24.Location = New System.Drawing.Point(19, 149)
         Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(75, 23)
+        Me.Button24.Size = New System.Drawing.Size(158, 22)
         Me.Button24.TabIndex = 87
-        Me.Button24.Text = "IMPRIMIR"
+        Me.Button24.Text = "Vista Previa de Impresion"
         Me.Button24.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.Enabled = False
+        Me.Button17.Location = New System.Drawing.Point(19, 103)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(158, 23)
+        Me.Button17.TabIndex = 88
+        Me.Button17.Text = "Actualizar Items"
+        Me.Button17.UseVisualStyleBackColor = True
         '
         'PrintDocument1
         '
@@ -1057,24 +1069,24 @@ Partial Class Form_Orden_Compra
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"CREDITO", "CONTADO"})
-        Me.ComboBox3.Location = New System.Drawing.Point(660, 206)
+        Me.ComboBox3.Location = New System.Drawing.Point(619, 211)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(105, 23)
+        Me.ComboBox3.Size = New System.Drawing.Size(144, 23)
         Me.ComboBox3.TabIndex = 120
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"CREDITO", "CONTADO"})
-        Me.ComboBox1.Location = New System.Drawing.Point(499, 205)
+        Me.ComboBox1.Location = New System.Drawing.Point(441, 211)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(108, 23)
+        Me.ComboBox1.Size = New System.Drawing.Size(149, 23)
         Me.ComboBox1.TabIndex = 113
         '
         'Label36
         '
         Me.Label36.AutoSize = True
-        Me.Label36.Location = New System.Drawing.Point(417, 209)
+        Me.Label36.Location = New System.Drawing.Point(440, 198)
         Me.Label36.Name = "Label36"
         Me.Label36.Size = New System.Drawing.Size(81, 15)
         Me.Label36.TabIndex = 119
@@ -1083,7 +1095,7 @@ Partial Class Form_Orden_Compra
         'Label35
         '
         Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(609, 211)
+        Me.Label35.Location = New System.Drawing.Point(618, 198)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(49, 15)
         Me.Label35.TabIndex = 118
@@ -1100,15 +1112,15 @@ Partial Class Form_Orden_Compra
         '
         'TextBox25
         '
-        Me.TextBox25.Location = New System.Drawing.Point(103, 206)
+        Me.TextBox25.Location = New System.Drawing.Point(10, 214)
         Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(308, 20)
+        Me.TextBox25.Size = New System.Drawing.Size(414, 20)
         Me.TextBox25.TabIndex = 115
         '
         'Label32
         '
         Me.Label32.AutoSize = True
-        Me.Label32.Location = New System.Drawing.Point(9, 209)
+        Me.Label32.Location = New System.Drawing.Point(9, 199)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(92, 15)
         Me.Label32.TabIndex = 114
@@ -1131,6 +1143,9 @@ Partial Class Form_Orden_Compra
         'PrintDocument2
         '
         '
+        'PrintDocument3
+        '
+        '
         'PrintDocument4
         '
         '
@@ -1140,7 +1155,6 @@ Partial Class Form_Orden_Compra
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ClientSize = New System.Drawing.Size(1103, 732)
-        Me.Controls.Add(Me.Button24)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label36)
@@ -1154,6 +1168,7 @@ Partial Class Form_Orden_Compra
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.TextBox23)
         Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TextBox21)
@@ -1162,13 +1177,16 @@ Partial Class Form_Orden_Compra
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.TextBox19)
         Me.Controls.Add(Me.Label25)
+        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Orden_Compra"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Orden de Compra"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgv2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1298,4 +1316,5 @@ Partial Class Form_Orden_Compra
     Friend WithEvents PrintDocument2 As Printing.PrintDocument
     Friend WithEvents PrintDocument3 As Printing.PrintDocument
     Friend WithEvents PrintDocument4 As Printing.PrintDocument
+    Friend WithEvents Button25 As Button
 End Class
