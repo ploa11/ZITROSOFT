@@ -6,6 +6,8 @@ Imports System.IO
 Imports Finisar.SQLite
 Imports System.Text
 Imports System.Windows.Controls
+Imports System.Windows.Documents
+
 'Imports System.Windows.Controls
 
 Public Class Form_Cotizacion
@@ -15,7 +17,7 @@ Public Class Form_Cotizacion
     Dim cod_p_rq, cod_p_rq2 As String
     Dim cod_fac, num_fac, rest, rest_util As String
     Public nom, nom_fondo, ruc_fondo, ruc, direc, dis_dep_prov, debe, haber, fecha, cod_crono, acciones, glosa, analitica, cuenta, nom_cuenta As String
-    Public comi_des, igv_comides, P_U, sub_total, igv_total, total, porc_igv, porc_util, utilidad, util_list As Decimal
+    Public comi_des, igv_comides, P_U, sub_total, igv_total, total, porc_igv, porc_util, utilidad, util_list, S, ST, U, UT, IG, IT As Decimal
     Dim compara As String
     Public cod As Double
     Dim nc As String
@@ -93,7 +95,7 @@ Public Class Form_Cotizacion
         utilidad = 0
         igv_comides = 0
         'P_U = TextBox14.Text
-        item2()
+        item3()
         'Button8.Enabled = False
         GroupBox5.Enabled = True
         CheckBox1.Checked = False
@@ -175,7 +177,7 @@ Public Class Form_Cotizacion
 
     End Sub
 
-    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -243,12 +245,12 @@ Public Class Form_Cotizacion
         Try
             If ListView1.SelectedItems.Count > 0 Then
 
-                Dim item As ListViewItem = ListView1.SelectedItems(0)
+                '  Dim item As ListViewItem = ListView1.SelectedItems(0)
 
-                rest = item.SubItems(4).Text
-                rest_util = item.SubItems(6).Text
-                Me.ListView1.Items.Remove(item)
-                j -= 1
+                ' rest = item.SubItems(4).Text
+                'rest_util = item.SubItems(6).Text
+                '  Me.ListView1.Items.Remove(item)
+                '  j -= 1
                 ' ListView1.Items.Remove(ListView1.Items.Item(j))
             End If
 
@@ -495,74 +497,12 @@ Public Class Form_Cotizacion
 
     End Sub
 
+
+
+
     Private Sub item2()
 
-        Try
-            j += 1
-            Dim linea As New ListViewItem(j)
-            preg = MsgBox("Desea agregar el item en COTIZACION", vbYesNo)
-            If preg = vbYes Then
-
-                linea.SubItems.Add(TextBox15.Text)
-                linea.SubItems.Add(TextBox18.Text)
-                linea.SubItems.Add(P_U)
-                'linea.SubItems.Add(P_U)
-                linea.SubItems.Add(TextBox16.Text)
-                'linea.SubItems.Add("PPPP")
-
-                'linea.SubItems.Add(comi_des.ToString("#,#.00"))
-
-                comi_des = TextBox16.Text
-                'igv_comides = TextBox16.Text * porc_igv
-                sub_total += comi_des
-                util_list = TextBox16.Text * porc_util
-                utilidad += sub_total * porc_util
-                igv_comides = (TextBox16.Text + util_list) * porc_igv
-                ' igv_total = ((sub_total + utilidad) * porc_igv)
-                igv_total += igv_comides
-                linea.SubItems.Add(igv_comides)
-                linea.SubItems.Add(util_list)
-                linea.SubItems.Add(TextBox27.Text)
-                linea.SubItems.Add(moneda)
-                ListView1.Items.Add(linea)
-                MessageBox.Show("Item Agregados", "")
-                TextBox19.Text = sub_total
-                TextBox20.Text = igv_total
-                TextBox25.Text = utilidad
-                ' Dim st001 As Decimal = st.Text
-                'Dim igv001 As Decimal = igv.Text
-
-                total = sub_total + utilidad + igv_total
-                TextBox21.Text = total
-
-
-            Else
-
-                MessageBox.Show("No hay mas item, generar factura o cancelar factura", "ZITRO")
-                'i = 0
-                ' g = 0
-
-            End If
-
-            ' preg = MsgBox("Desea agregar el item para facturar", vbYesNo)
-            ' If preg = vbYes Then
-            'item()
-            'MessageBox.Show("Item Agregados", "Optima")
-            '
-            ' st.Text = sub_total
-            'igv.Text = igv_total
-            'Dim st001 As Decimal = st.Text
-            'Dim igv001 As Decimal = igv.Text
-            '  total = st001 + igv001
-            't.Text = total
-            'Else
-            'MessageBox.Show("Item no Agregados", "Optima")
-            'i = 0
-            'g = 0
-            'End If
-        Catch ex As Exception
-            MessageBox.Show("Error de en ingresar los datos", "ZITRO")
-        End Try
+        j += 1
 
 
 
@@ -1210,7 +1150,7 @@ Public Class Form_Cotizacion
 
     End Sub
 
-    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs) Handles ListView1.DoubleClick
+    Private Sub ListView1_DoubleClick(sender As Object, e As EventArgs)
 
     End Sub
     Private Sub generar_cot_venta()
@@ -1843,18 +1783,18 @@ Public Class Form_Cotizacion
         Form_Imprimir_Coti.f_venc.Text = UCase(DateTimePicker2.Text)
         Form_Imprimir_Coti.oc.Text = TextBox23.Text
         Form_Imprimir_Coti.OT.Text = TextBox7.Text
-        Form_Imprimir_Coti.SBCC.Text = TextBox8.Text
-        Form_Imprimir_Coti.LOCAL.Text = TextBox1.Text
-        Form_Imprimir_Coti.OBS.Text = TextBox25.Text
+        Form_Imprimir_Coti.LOCAL.Text = TextBox24.Text
+        Form_Imprimir_Coti.UBI_LOCAL.Text = TextBox8.Text
+        Form_Imprimir_Coti.direcc.Text = TextBox7.Text
         Try
             sql = "select COD AS [ITEM], DESCRIP AS [DESCRIPCION], UND, CANTIDAD, PREC_UNIT AS [P.UNITARIO], PREC_TOTAL AS [SUBTOTAL] from T_OC_ITEMS WHERE COD_OC='" + TextBox23.Text + "'"
             Form_Reg_SRV_SQL.conectar()
             da = New SqlClient.SqlDataAdapter(sql, Form_Reg_SRV_SQL.conexion)
             cb = New SqlClient.SqlCommandBuilder(da)
             ds = New DataSet
-            da.Fill(ds, "T_OC_ITEMS")
+            da.Fill(ds, "T_COTI_ITEMS")
             Form_Impresion_OC.DataGridView1.DataSource = ds
-            Form_Impresion_OC.DataGridView1.DataMember = "T_OC_ITEMS"
+            Form_Impresion_OC.DataGridView1.DataMember = "T_COTI_ITEMS"
             Form_Reg_SRV_SQL.conexion.Close()
         Catch ex As Exception
             MessageBox.Show("Error al mostrar los datos", "ZITRO")
@@ -1900,5 +1840,77 @@ Public Class Form_Cotizacion
         'Button17.Enabled = False
         ' llenar_PRO_OC()
     End Sub
+    Private Sub item3()
+        Dim IGV_ITEM, IGV_TOTAL_ITEM, SUBTOTAL_ITEM, TOTAL_ITEM, MONT_UTIL, IGV_UTIL, SUB_TOTAL_UTIL, IGV_TOT_UTIL, TOTAL_UTIL_ITEM As Decimal
+        Dim CANT_ITEM As Integer
+        j += 1
+        Dim ITEM_I As String
+        ITEM_I = j
+        CANT_ITEM = TextBox15.Text
+        Dim linea As System.Windows.Forms.ListViewItem
 
+        preg = MsgBox("Desea agregar el item en COTIZACION", vbYesNo)
+        Try
+            If preg = vbYes Then
+
+                linea = ListView1.Items.Add(ITEM_I, j)
+                linea.SubItems.Add(TextBox15.Text)
+                linea.SubItems.Add(TextBox18.Text)
+                linea.SubItems.Add(TextBox27.Text)
+                linea.SubItems.Add(Format(P_U, "0.00"))
+                IGV_ITEM = P_U * porc_igv
+                SUBTOTAL_ITEM = P_U * CANT_ITEM
+                IGV_TOTAL_ITEM = IGV_ITEM * CANT_ITEM
+                TOTAL_ITEM = SUBTOTAL_ITEM + IGV_TOTAL_ITEM
+                linea.SubItems.Add(Format(IGV_ITEM, "0.00"))
+                linea.SubItems.Add(Format(SUBTOTAL_ITEM, "0.00"))
+                linea.SubItems.Add(Format(IGV_TOTAL_ITEM, "0.00"))
+                linea.SubItems.Add(Format(TOTAL_ITEM, "0.00"))
+                linea.SubItems.Add(TextBox26.Text)
+                MONT_UTIL = P_U * porc_util
+                linea.SubItems.Add(Format(MONT_UTIL, "0.00"))
+                linea.SubItems.Add(Format(P_U + MONT_UTIL, "0.00"))
+                IGV_UTIL = (P_U + MONT_UTIL) * porc_igv
+                linea.SubItems.Add(Format(IGV_UTIL, "0.00"))
+                SUB_TOTAL_UTIL = (P_U + MONT_UTIL) * CANT_ITEM
+                linea.SubItems.Add(Format(SUB_TOTAL_UTIL, "0.00"))
+                IGV_TOT_UTIL = IGV_UTIL * CANT_ITEM
+                linea.SubItems.Add(Format(IGV_TOT_UTIL, "0.00"))
+                TOTAL_UTIL_ITEM = SUB_TOTAL_UTIL + IGV_TOT_UTIL
+                linea.SubItems.Add(Format(TOTAL_UTIL_ITEM, "0.00"))
+                linea.SubItems.Add(moneda)
+                S = SUB_TOTAL_UTIL
+                U = MONT_UTIL
+                IG = IGV_UTIL
+
+                ' ListView1.Items.Add(j)
+
+                ' TextBox25.Text += (MONT_UTIL * CANT_ITEM)
+                ' TextBox20.Text += IGV_TOT_UTIL
+                ' TextBox21.Text += TOTAL_UTIL_ITEM
+                'comi_des = TextBox16.Text
+                ' igv_comides = TextBox16.Text * porc_igv
+                'sub_total += comi_des
+                'util_list = TextBox16.Text * porc_util
+                ' utilidad += sub_total * porc_util
+                ' igv_comides = (TextBox16.Text + util_list) * porc_igv
+                ' igv_total = ((sub_total + utilidad) * porc_igv)
+                ' igv_total += igv_comides
+            Else
+
+                MessageBox.Show("No hay mas item, generar factura o cancelar factura", "ZITRO")
+
+            End If
+            ST += S
+            UT += U
+            IT += IG
+            TextBox19.Text = Format(UT, "0.00")
+            TextBox25.Text = Format(S, "0.00")
+            TextBox20.Text = Format(IT, "0.00")
+            TextBox21.Text = Format(ST + IT, "0.00")
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
 End Class

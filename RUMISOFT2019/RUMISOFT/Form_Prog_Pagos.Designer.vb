@@ -613,6 +613,7 @@ Partial Class Form_Prog_Pagos
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Form_Prog_Pagos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Programar Pagos"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

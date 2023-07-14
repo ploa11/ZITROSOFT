@@ -259,6 +259,7 @@ Partial Class Form_reg_Banco
         Me.Controls.Add(Me.ListView1)
         Me.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Form_reg_Banco"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form_reg_Banco"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

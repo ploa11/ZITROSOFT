@@ -557,7 +557,7 @@ Partial Class Form_Imprimir_Coti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(771, 781)
+        Me.ClientSize = New System.Drawing.Size(771, 749)
         Me.Controls.Add(Me.MONT_UTIL)
         Me.Controls.Add(Me.Label_UTIL)
         Me.Controls.Add(Me.lineatop)
@@ -611,6 +611,7 @@ Partial Class Form_Imprimir_Coti
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form_Imprimir_Coti"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form_Imprimir_Coti"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

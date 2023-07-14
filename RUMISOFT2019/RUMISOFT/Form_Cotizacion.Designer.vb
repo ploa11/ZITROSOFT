@@ -105,16 +105,6 @@ Partial Class Form_Cotizacion
         Me.TextBox19 = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.UND = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label10 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button11 = New System.Windows.Forms.Button()
@@ -136,6 +126,24 @@ Partial Class Form_Cotizacion
         Me.PrintDocument2 = New System.Drawing.Printing.PrintDocument()
         Me.PrintDocument3 = New System.Drawing.Printing.PrintDocument()
         Me.PrintDocument4 = New System.Drawing.Printing.PrintDocument()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader17 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.dgv2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -975,7 +983,7 @@ Partial Class Form_Cotizacion
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(694, 603)
+        Me.Label25.Location = New System.Drawing.Point(692, 635)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(63, 15)
         Me.Label25.TabIndex = 90
@@ -991,61 +999,6 @@ Partial Class Form_Cotizacion
         Me.Button9.TabIndex = 89
         Me.Button9.Text = "CREAR ITEMS COTIZACION"
         Me.Button9.UseVisualStyleBackColor = False
-        '
-        'ListView1
-        '
-        Me.ListView1.BackColor = System.Drawing.SystemColors.Window
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader7, Me.ColumnHeader6, Me.UND, Me.ColumnHeader8})
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(3, 329)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(883, 264)
-        Me.ListView1.TabIndex = 88
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "ITEM"
-        Me.ColumnHeader1.Width = 29
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "CANTIDAD"
-        Me.ColumnHeader2.Width = 67
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "DESCRIPCION"
-        Me.ColumnHeader3.Width = 372
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "PRECIO UNITARIO"
-        Me.ColumnHeader4.Width = 113
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "TOTAL"
-        Me.ColumnHeader5.Width = 56
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "IGV"
-        Me.ColumnHeader7.Width = 50
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "UTILIDAD"
-        Me.ColumnHeader6.Width = 63
-        '
-        'UND
-        '
-        Me.UND.Text = "UND"
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Text = "MONEDA"
         '
         'Label10
         '
@@ -1202,7 +1155,7 @@ Partial Class Form_Cotizacion
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(694, 633)
+        Me.Label33.Location = New System.Drawing.Point(694, 601)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(55, 15)
         Me.Label33.TabIndex = 106
@@ -1221,6 +1174,85 @@ Partial Class Form_Cotizacion
         'PrintDialog1
         '
         Me.PrintDialog1.UseEXDialog = True
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8, Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11, Me.ColumnHeader12, Me.ColumnHeader13, Me.ColumnHeader14, Me.ColumnHeader15, Me.ColumnHeader16, Me.ColumnHeader17})
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(3, 329)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(883, 264)
+        Me.ListView1.TabIndex = 108
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "ITEM"
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "CANTIDAD"
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "DESCRIPCION"
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "UND"
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "P_U"
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "IGV"
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "SUB TOTAL"
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "IGV TOTAL"
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "TOTAL"
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "% UTIL"
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "UTILIDAD"
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "PU + UTIL"
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "IGV PU+ UTIL"
+        '
+        'ColumnHeader14
+        '
+        Me.ColumnHeader14.Text = "SOBTOTAL UTIL"
+        '
+        'ColumnHeader15
+        '
+        Me.ColumnHeader15.Text = "IGV TOTAL UTIL"
+        '
+        'ColumnHeader16
+        '
+        Me.ColumnHeader16.Text = "TOTAL UTIL"
+        '
+        'ColumnHeader17
+        '
+        Me.ColumnHeader17.Text = "MONEDA"
         '
         'Form_Cotizacion
         '
@@ -1331,13 +1363,6 @@ Partial Class Form_Cotizacion
     Friend WithEvents TextBox19 As TextBox
     Friend WithEvents Label25 As Label
     Friend WithEvents Button9 As Button
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
-    Friend WithEvents ColumnHeader4 As ColumnHeader
-    Friend WithEvents ColumnHeader5 As ColumnHeader
-    Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents Label10 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents ComboBox1 As ComboBox
@@ -1368,17 +1393,14 @@ Partial Class Form_Cotizacion
     Friend WithEvents Label34 As Label
     Friend WithEvents TextBox26 As TextBox
     Friend WithEvents Label35 As Label
-    Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents Label36 As Label
     Friend WithEvents TextBox27 As TextBox
-    Friend WithEvents UND As ColumnHeader
     Friend WithEvents Button20 As Button
     Friend WithEvents Button21 As Button
     Friend WithEvents Button22 As Button
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents ColumnHeader8 As ColumnHeader
     Friend WithEvents Button23 As Button
     Friend WithEvents Button24 As Button
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
@@ -1387,4 +1409,22 @@ Partial Class Form_Cotizacion
     Friend WithEvents PrintDocument2 As Printing.PrintDocument
     Friend WithEvents PrintDocument3 As Printing.PrintDocument
     Friend WithEvents PrintDocument4 As Printing.PrintDocument
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents ColumnHeader7 As ColumnHeader
+    Friend WithEvents ColumnHeader8 As ColumnHeader
+    Friend WithEvents ColumnHeader9 As ColumnHeader
+    Friend WithEvents ColumnHeader10 As ColumnHeader
+    Friend WithEvents ColumnHeader11 As ColumnHeader
+    Friend WithEvents ColumnHeader12 As ColumnHeader
+    Friend WithEvents ColumnHeader13 As ColumnHeader
+    Friend WithEvents ColumnHeader14 As ColumnHeader
+    Friend WithEvents ColumnHeader15 As ColumnHeader
+    Friend WithEvents ColumnHeader16 As ColumnHeader
+    Friend WithEvents ColumnHeader17 As ColumnHeader
 End Class

@@ -494,7 +494,7 @@ Partial Class Form_Orden_Compra
         '
         'ColumnHeader1
         '
-        Me.ColumnHeader1.Text = "ID"
+        Me.ColumnHeader1.Text = "ITEM"
         Me.ColumnHeader1.Width = 29
         '
         'ColumnHeader2

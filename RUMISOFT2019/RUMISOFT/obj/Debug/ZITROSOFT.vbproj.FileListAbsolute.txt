@@ -440,3 +440,4 @@ C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\ZITROSOFT.vbp
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.exe
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.xml
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.pdb
+C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_Imprimir_Coti.resources

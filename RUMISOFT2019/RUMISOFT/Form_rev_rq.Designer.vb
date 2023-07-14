@@ -173,6 +173,7 @@ Partial Class Form_rev_rq
         Me.Controls.Add(Me.dgv)
         Me.Font = New System.Drawing.Font("Calibri", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Form_rev_rq"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Revision de Requerimiento y Sub Centro de Costo"
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
