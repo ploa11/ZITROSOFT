@@ -242,16 +242,17 @@ Public Class Form_Cotizacion
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        Dim ITEM As System.Windows.Forms.ListViewItem
         Try
             If ListView1.SelectedItems.Count > 0 Then
 
-                '  Dim item As ListViewItem = ListView1.SelectedItems(0)
-
-                ' rest = item.SubItems(4).Text
-                'rest_util = item.SubItems(6).Text
-                '  Me.ListView1.Items.Remove(item)
-                '  j -= 1
-                ' ListView1.Items.Remove(ListView1.Items.Item(j))
+                'Dim item As ListViewItem = ListView1.SelectedItems(0)
+                ITEM = ListView1.SelectedItems(0)
+                rest = item.SubItems(4).Text
+                rest_util = item.SubItems(6).Text
+                Me.ListView1.Items.Remove(item)
+                j -= 1
+                ListView1.Items.Remove(ListView1.Items.Item(j))
             End If
 
             sub_total = sub_total - rest
