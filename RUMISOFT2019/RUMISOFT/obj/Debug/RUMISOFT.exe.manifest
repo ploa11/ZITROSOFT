@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RUMISOFT.exe" size="1179648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RUMISOFT.exe" size="1180160">
       <assemblyIdentity name="RUMISOFT" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ecix1+PSTq6A2Q8uLbmCHsIXO6d+QnseB11haaTei/E=</dsig:DigestValue>
+        <dsig:DigestValue>xmTz45ggci/qz9/MO8D7SuIdCHYidJcGNU1m5E1siJM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

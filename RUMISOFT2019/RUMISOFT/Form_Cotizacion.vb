@@ -248,7 +248,7 @@ Public Class Form_Cotizacion
 
                 'Dim item As ListViewItem = ListView1.SelectedItems(0)
                 ITEM = ListView1.SelectedItems(0)
-                rest = item.SubItems(4).Text
+                rest = ITEM.SubItems(14).Text
                 rest_util = item.SubItems(6).Text
                 Me.ListView1.Items.Remove(item)
                 j -= 1
@@ -322,14 +322,17 @@ Public Class Form_Cotizacion
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        Dim PU, CANT, TOT, TOT_SI As Double
+        'Dim PU, CANT, TOT, TOT_SI As Double
+        Dim CANT As Double
+        Dim PU, UTIL, TOTAL, TOT, TOT_SI As Decimal
         Try
             If CheckBox1.Checked = True Then
                 'PU = Val(TextBox14.Text)
                 P_U = Val(TextBox14.Text) / 1.18
                 CANT = Val(TextBox15.Text)
                 porc_util = Val(TextBox26.Text) / 100
-                TOT_SI = (CANT * P_U)
+                UTIL = P_U * porc_util
+                TOT_SI = CANT * (P_U + UTIL)
                 TextBox16.Text = TOT_SI
 
                 'Button8.Enabled = True
@@ -337,8 +340,9 @@ Public Class Form_Cotizacion
                 P_U = Val(TextBox14.Text)
                 CANT = Val(TextBox15.Text)
                 porc_util = Val(TextBox26.Text) / 100
-                TOT = (CANT * P_U)
-                TextBox16.Text = TOT
+                UTIL = P_U * porc_util
+                TOT = CANT * (P_U + UTIL)
+                TextBox16.Text = Format("0.00", TOT)
                 'Button8.Enabled = True
             End If
 
@@ -587,13 +591,16 @@ Public Class Form_Cotizacion
     End Sub
 
     Private Sub TextBox14_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox14.KeyUp
-        Dim PU, CANT, TOT As Double
+        Dim CANT As Double
+        Dim PU, UTIL, TOTAL As Decimal
         Try
             P_U = Val(TextBox14.Text)
+            'UTIL = P_U * porc_util
             CANT = Val(TextBox15.Text)
             porc_util = Val(TextBox26.Text) / 100
-            TOT = CANT * P_U
-            TextBox16.Text = TOT
+            UTIL = P_U * porc_util
+            TOTAL = CANT * (P_U + UTIL)
+            TextBox16.Text = Format("0.00", TOTAL)
             'Button8.Enabled = True
         Catch ex As Exception
 
@@ -697,7 +704,7 @@ Public Class Form_Cotizacion
         Dim aum_cod As String
         Dim dat As String = "ICOTI"
         'Dim cod, serie As String
-        sql = "select *from T_COTI_ITEMS where id in (select max(id) from T_COTI_ITEMS)"
+        sql = "select *from T_COTI_ITEMS_NEW where id in (select max(id) from T_COTI_ITEMS_NEW)"
         Form_Reg_SRV_SQL.conectar()
         com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
         dr = com.ExecuteReader
@@ -818,7 +825,7 @@ Public Class Form_Cotizacion
         Try
             For o = 0 To ListView1.Items.Count - 1
                 If accion = "guardar" Then
-                    sql = "select *from T_COTI_ITEMS where  COD='" + ListView1.Items(o).SubItems(0).Text + "'"
+                    sql = "select *from T_COTI_ITEMS_NEW where  COD='" + ListView1.Items(o).SubItems(0).Text + "'"
                     Form_Reg_SRV_SQL.conectar()
                     com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
                     dr = com.ExecuteReader
@@ -833,17 +840,26 @@ Public Class Form_Cotizacion
 
                         Dim CANTIDAD As String = ListView1.Items(o).SubItems(1).Text
                         Dim DESCRIP As String = ListView1.Items(o).SubItems(2).Text
-                        Dim PREC_UNIT As String = ListView1.Items(o).SubItems(3).Text
-                        Dim PREC_TOTAL As String = ListView1.Items(o).SubItems(4).Text
+                        Dim UNDIDAD As String = ListView1.Items(o).SubItems(3).Text
+                        Dim P_U As String = ListView1.Items(o).SubItems(4).Text
                         Dim IGV As String = ListView1.Items(o).SubItems(5).Text
-                        Dim util_item2 As String = ListView1.Items(o).SubItems(6).Text
-                        Dim UND As String = ListView1.Items(o).SubItems(7).Text
+                        Dim SUBTOTAL As String = ListView1.Items(o).SubItems(6).Text
+                        Dim IGVTOTAL As String = ListView1.Items(o).SubItems(7).Text
+                        Dim TOTAL As String = ListView1.Items(o).SubItems(8).Text
+                        Dim POR_UTIL As String = ListView1.Items(o).SubItems(9).Text
+                        Dim UTILIDAD As String = ListView1.Items(o).SubItems(10).Text
+                        Dim PU_UTIL As String = ListView1.Items(o).SubItems(11).Text
+                        Dim IGV_PU_UTIL As String = ListView1.Items(o).SubItems(12).Text
+                        Dim SUB_TOTAL_UTIL As String = ListView1.Items(o).SubItems(13).Text
+                        Dim IGV_TOTAL_UTIL As String = ListView1.Items(o).SubItems(14).Text
+                        Dim TOTAL_UTIL As String = ListView1.Items(o).SubItems(15).Text
+
                         'Dim PIO As String = ListView1.Items(o).SubItems(10).Text
                         'Dim OBS As String = ListView1.Items(o).SubItems(11).Text
                         ' Dim FEC As String = DateTimePicker5.Value.ToString("yyyyMMdd")
                         ' Dim EST As String = ListView1.Items(o).SubItems(13).Text
 
-                        sql = "INSERT INTO T_COTI_ITEMS (COD,COD_COTI,CANTIDAD,DESCRIP,PREC_UNIT,PREC_TOTAL,IGV,PORCEN_UTIL,UTILIDAD, UND, moneda) VALUES('" & COD & "','" & UCase(TextBox23.Text) & "','" & CANTIDAD & "','" & UCase(DESCRIP) & "','" & PREC_UNIT & "','" & PREC_TOTAL & "','" & IGV & "','" & TextBox26.Text & "','" & util_item2 & "','" & UCase(UND) & "','" & moneda & "')"
+                        sql = "INSERT INTO T_COTI_ITEMS_NEW (COD,COD_COTI,CANTIDAD,DESCRIPCION,UND,P_U,IGV,SUB_TOTAL,IGV_TOTAL, POR_UTIL, UTILIDAD, PU_UTIL, IGV_PU_UTIL,SUBTOTAL_UTIL, IGV_TOTAL_UTIL, TOTAL_UTIL, MONEDA, FEC_REG) VALUES('" & COD & "','" & UCase(TextBox23.Text) & "','" & CANTIDAD & "','" & UCase(DESCRIP) & "','" & UNDIDAD & "','" & P_U & "','" & IGV & "','" & SUBTOTAL & "','" & IGVTOTAL & "','" & TOTAL & "','" & POR_UTIL & "','" & UTILIDAD & "',' " & PU_UTIL & "','" & IGV_PU_UTIL & "','" & SUB_TOTAL_UTIL & "','" & IGV_TOTAL_UTIL & "','" & TOTAL_UTIL & "','" & moneda & "','" & DateTimePicker1.Value.ToString("yyyyMMdd") & "')"
                         Form_Reg_SRV_SQL.conectar()
                         com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
                         res = com.ExecuteNonQuery
@@ -913,14 +929,14 @@ Public Class Form_Cotizacion
     End Sub
     Public Sub llenar_PRO_COTI()
         Try
-            sql = "select COD AS [CODIGO],COD_COTI AS [CODIGO COTIZACION], CANTIDAD , DESCRIP AS [DESCRIPCION DE ITEM], PREC_UNIT AS [PRECIO UNITARIO], PREC_TOTAL AS [PRECIO TOTAL],IGV,PORCEN_UTIL AS [% DE UTILIDAD], UTILIDAD, UND AS [UNIDAD], MONEDA  from T_COTI_ITEMS WHERE COD_COTI='" + TextBox23.Text + "'"
+            sql = "select *from T_COTI_ITEMS_NEW WHERE COD_COTI='" + TextBox23.Text + "'"
             Form_Reg_SRV_SQL.conectar()
             da = New SqlClient.SqlDataAdapter(sql, Form_Reg_SRV_SQL.conexion)
             cb = New SqlClient.SqlCommandBuilder(da)
             ds = New DataSet
-            da.Fill(ds, "T_COTI_ITEMS")
+            da.Fill(ds, "T_COTI_ITEMS_NEW")
             DataGridView1.DataSource = ds
-            DataGridView1.DataMember = "T_COTI_ITEMS"
+            DataGridView1.DataMember = "T_COTI_ITEMS_NEW"
             Form_Reg_SRV_SQL.conexion.Close()
         Catch ex As Exception
             MessageBox.Show("Error al mostrar los datos", "ZITRO")
@@ -929,14 +945,14 @@ Public Class Form_Cotizacion
     End Sub
     Public Sub llenar_PRO_COTI_SCCO()
         Try
-            sql = "select COD AS [CODIGO],COD_COTI AS [CODIGO COTIZACION], CANTIDAD , DESCRIP AS [DESCRIPCION DE ITEM], PREC_UNIT AS [PRECIO UNITARIO], PREC_TOTAL AS [PRECIO TOTAL],IGV,PORCEN_UTIL AS [% DE UTILIDAD], UTILIDAD, UND AS [UNIDAD], MONEDA  from T_COTI_ITEMS WHERE COD_COTI='" + Form1.COD_COTI_SSC + "'"
+            sql = "select *from T_COTI_ITEMS_NEW WHERE COD_COTI='" + Form1.COD_COTI_SSC + "'"
             Form_Reg_SRV_SQL.conectar()
             da = New SqlClient.SqlDataAdapter(sql, Form_Reg_SRV_SQL.conexion)
             cb = New SqlClient.SqlCommandBuilder(da)
             ds = New DataSet
-            da.Fill(ds, "T_COTI_ITEMS")
+            da.Fill(ds, "T_COTI_ITEMS_NEW")
             Form_Reg_SCCOS.DataGridView1.DataSource = ds
-            Form_Reg_SCCOS.DataGridView1.DataMember = "T_COTI_ITEMS"
+            Form_Reg_SCCOS.DataGridView1.DataMember = "T_COTI_ITEMS_NEW"
             Form_Reg_SRV_SQL.conexion.Close()
         Catch ex As Exception
             MessageBox.Show("Error al mostrar los datos", "ZITRO")
@@ -1354,7 +1370,7 @@ Public Class Form_Cotizacion
 
             'sql = "INSERT INTO T_COTI_ITEMS (COD, COD_COTI, CANTIDAD, DESCRIP, PREC_UNIT, PREC_TOTAL, IGV) VALUES('" & cod & "','" & TextBox23.Text & "','" & CANTIDAD & "','" & descrip & "','" & prec_unit & "','" & prec_total & "','" & igv & "')"
             ' sql = "UPDATE  T_COTI_ITEMS SET(CANTIDAD,DESCRIP,PREC_UNIT,PREC_TOTAL,IGV) VALUES('" & cod & "','" & TextBox23.Text & "','" & CANTIDAD & "','" & descrip & "','" & prec_unit & "','" & prec_total & "','" & igv & "')"
-            sql = "UPDATE T_COTI_ITEMS SET CANTIDAD='" & UCase(cant_EDITAR) & "', DESCRIP='" & descrip_editar & "',  PREC_UNIT='" & prec_unit_editar & "', PREC_TOTAL='" & prec_total_editar & "', IGV= '" & igv_editar & "', PORCEN_UTIL='" & POR_UTIL & "', UTILIDAD='" & UTIL_ACT & "', UND='" & UND & "' WHERE COD='" & cod_editar & "'"
+            sql = "UPDATE T_COTI_ITEMS_NEW SET CANTIDAD='" & UCase(cant_EDITAR) & "', DESCRIPCION='" & descrip_editar & "',  P_U='" & prec_unit_editar & "', PREC_TOTAL='" & prec_total_editar & "', IGV= '" & igv_editar & "', PORCEN_UTIL='" & POR_UTIL & "', UTILIDAD='" & UTIL_ACT & "', UND='" & UND & "' WHERE COD='" & cod_editar & "'"
             Form_Reg_SRV_SQL.conectar()
             com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
             res = com.ExecuteNonQuery
@@ -1388,7 +1404,7 @@ Public Class Form_Cotizacion
     End Sub
     Sub ELIMINAR_ITEMS_COTI()
         Dim selec As String = TextBox23.Text
-        sql = "DELETE from T_COTI_ITEMS where  COD_COTI='" + selec + "'"
+        sql = "DELETE from T_COTI_ITEMS_NEW where  COD_COTI='" + selec + "'"
         Form_Reg_SRV_SQL.conectar()
         com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
         dr = com.ExecuteReader
@@ -1398,7 +1414,7 @@ Public Class Form_Cotizacion
     End Sub
     Sub ELIMINAR_ITEM_COTI()
         Dim selec As String = DataGridView1.Rows(DataGridView1.CurrentRow.Index).Cells(0).Value
-        sql = "DELETE from T_COTI_ITEMS where  COD='" + selec + "'"
+        sql = "DELETE from T_COTI_ITEMS_NEW where  COD='" + selec + "'"
         Form_Reg_SRV_SQL.conectar()
         com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
         dr = com.ExecuteReader
