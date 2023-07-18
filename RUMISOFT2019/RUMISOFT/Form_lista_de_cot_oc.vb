@@ -536,7 +536,14 @@ Public Class Form1
                         Form_Cotizacion.DateTimePicker1.Value = dr(1)
                         Form_Cotizacion.TextBox3.Text = dr(3)
                         Form_Cotizacion.TextBox4.Text = dr(4)
+
                         Form_Cotizacion.TextBox1.Text = dr(5)
+
+
+
+
+
+
                         Form_Cotizacion.DateTimePicker2.Value = dr(13)
                         'Form_Cotizacion.TextBox6.Text = dr(6)
                         Form_Cotizacion.TextBox9.Text = dr(6)

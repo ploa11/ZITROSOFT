@@ -299,6 +299,7 @@ Public Class Form_Cotizacion
         ELIMINAR_ITEM_COTI()
         llenar_PRO_COTI()
         ACTUALIZAR()
+        TOTALES()
     End Sub
 
     Private Sub Label18_Click(sender As Object, e As EventArgs) Handles Label18.Click
@@ -1304,21 +1305,28 @@ Public Class Form_Cotizacion
     End Sub
     Sub TOTALES()
         Dim cod_editar, cod_coti_editar, descrip_editar As String
-        Dim cant_EDITAR, prec_unit_editar, prec_total_editar, igv_editar, util_bus, t_stotal, t_util, t_igv, tt As Integer
+        Dim st_local, util_local, igv_local, t_local, st_local2, util_local2, igv_local2, t_local2, st_venta, igv_venta, t_venta, st_venta2, igv_venta2, t_venta2 As Decimal
         accion = "guardar"
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
             'cod_editar = Trim(DataGridView1.Rows(i).Cells(0).Value)
             'cod_coti_editar = Trim(DataGridView1.Rows(i).Cells(1).Value)
             'cant_EDITAR = (DataGridView1.Rows(i).Cells(2).Value)
             'descrip_editar = Trim(DataGridView1.Rows(i).Cells(3).Value)
-            prec_unit_editar = (DataGridView1.Rows(i).Cells(7).Value)
-            prec_total_editar = (DataGridView1.Rows(i).Cells(9).Value)
-            igv_editar = (DataGridView1.Rows(i).Cells(8).Value)
-            util_bus = (DataGridView1.Rows(i).Cells(8).Value)
-            t_stotal += prec_unit_editar
-            t_util += util_bus
-            t_igv += igv_editar
-            tt += (prec_total_editar + util_bus + igv_editar)
+            st_local = (DataGridView1.Rows(i).Cells(7).Value)
+            igv_local = (DataGridView1.Rows(i).Cells(8).Value)
+            util_local = (DataGridView1.Rows(i).Cells(11).Value)
+            t_local = (DataGridView1.Rows(i).Cells(9).Value)
+            st_venta = (DataGridView1.Rows(i).Cells(14).Value)
+            igv_venta = (DataGridView1.Rows(i).Cells(15).Value)
+            t_venta = (DataGridView1.Rows(i).Cells(16).Value)
+            st_local2 += st_local
+            igv_local2 += igv_local
+            util_local2 += util_local
+            t_local2 += t_local
+            st_venta2 += st_venta
+            igv_venta2 += igv_venta
+            t_venta2 += t_venta
+
             'auxi_editar = MsgBox("¿ESTA SEGURO DE ACTUALIZAR ESTE REGISTRO?", MsgBoxStyle.YesNo, "ACTUALIZAR")
 
 
@@ -1342,10 +1350,13 @@ Public Class Form_Cotizacion
             'MsgBox("DATOS NO ACTUALIZADOS", MsgBoxStyle.Information, "ACTUALIZACION")
             'End If
         Next
-        TextBox19.Text = t_stotal
-        TextBox25.Text = t_util
-        TextBox20.Text = t_igv
-        TextBox21.Text = tt
+        TextBox19.Text = Format("0.00", util_local2)
+        TextBox25.Text = Format("0.00", st_local2)
+        TextBox20.Text = Format("0.00", igv_local2)
+        TextBox21.Text = Format("0.00", t_local2)
+        TextBox28.Text = Format("0.00", st_venta2)
+        TextBox29.Text = Format("0.00", igv_venta2)
+        TextBox30.Text = Format("0.00", t_venta2)
 
         ' DataGridView1.Enabled = False
         ' MsgBox("DATOS ACTUALIZADOS CORRECTAMENTE", MsgBoxStyle.Information, "ACTUALIZACION")
@@ -1353,28 +1364,43 @@ Public Class Form_Cotizacion
     End Sub
     Sub ACTUALIZAR()
         'Dim auxi_editar As String
-        Dim cod_editar, cod_coti_editar, descrip_editar, UND As String
-        Dim cant_EDITAR, prec_unit_editar, prec_total_editar, igv_editar, POR_UTIL, UTIL_ACT As Integer
+        Dim cod_editar, cod_coti_editar, descrip_editar, unidad As String
+        Dim cant_editar, por_util, por_igv As Integer
+        Dim st_local, util_local, igv_local, t_local, st_local2, util_local2, igv_local2, t_local2, st_venta, igv_venta, t_venta, st_venta2, igv_venta2, t_venta2, p_u_editar, p_u_util_editar, igv_pu_util_edit, igv_total_util_pu, util_total As Decimal
         accion = "guardar"
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
             cod_editar = Trim(DataGridView1.Rows(i).Cells(0).Value)
             cod_coti_editar = Trim(DataGridView1.Rows(i).Cells(1).Value)
             cant_EDITAR = (DataGridView1.Rows(i).Cells(2).Value)
             descrip_editar = Trim(DataGridView1.Rows(i).Cells(3).Value)
-            prec_unit_editar = (DataGridView1.Rows(i).Cells(4).Value)
-            POR_UTIL = (DataGridView1.Rows(i).Cells(7).Value)
-            prec_total_editar = prec_unit_editar * cant_EDITAR '(DataGridView1.Rows(i).Cells(5).Value)
+            p_u_editar = (DataGridView1.Rows(i).Cells(5).Value)
+            por_util = (DataGridView1.Rows(i).Cells(10).Value)
+            ' por_igv = (DataGridView1.Rows(i).Cells(6).Value)
+            unidad = (DataGridView1.Rows(i).Cells(4).Value)
+            'por_igv = 18 / 100
+            st_local = p_u_editar * cant_editar '(DataGridView1.Rows(i).Cells(5).Value)
+            igv_local = p_u_editar * porc_igv
+            igv_total = igv_local * cant_editar
+            t_local = st_local + igv_total
+            util_local = (p_u_editar * (por_util / 100))
+            util_total = util_local * cant_editar
+            p_u_util_editar = (p_u_editar + util_local)
+            st_venta = p_u_util_editar*cant_editar
+            igv_pu_util_edit = p_u_util_editar * porc_igv
+            igv_total_util_pu = igv_pu_util_edit * cant_editar
+            t_venta = st_venta + igv_total_util_pu
+
             'POR_UTIL_VALOR = prec_total_editar * (POR_UTIL / 100)
-            UTIL_ACT = prec_total_editar * (POR_UTIL / 100)
-            igv_editar = (prec_total_editar + UTIL_ACT) * 0.18 '(DataGridView1.Rows(i).Cells(6).Value)
-            UND = (DataGridView1.Rows(i).Cells(9).Value)
+            ' UTIL_ACT = prec_total_editar * (POR_UTIL / 100)
+            'igv_editar = (prec_total_editar + UTIL_ACT) * 0.18 '(DataGridView1.Rows(i).Cells(6).Value)
+            ' UND = (DataGridView1.Rows(i).Cells(9).Value)
 
             'auxi_editar = MsgBox("¿ESTA SEGURO DE ACTUALIZAR ESTE REGISTRO?", MsgBoxStyle.YesNo, "ACTUALIZAR")
 
 
             'sql = "INSERT INTO T_COTI_ITEMS (COD, COD_COTI, CANTIDAD, DESCRIP, PREC_UNIT, PREC_TOTAL, IGV) VALUES('" & cod & "','" & TextBox23.Text & "','" & CANTIDAD & "','" & descrip & "','" & prec_unit & "','" & prec_total & "','" & igv & "')"
             ' sql = "UPDATE  T_COTI_ITEMS SET(CANTIDAD,DESCRIP,PREC_UNIT,PREC_TOTAL,IGV) VALUES('" & cod & "','" & TextBox23.Text & "','" & CANTIDAD & "','" & descrip & "','" & prec_unit & "','" & prec_total & "','" & igv & "')"
-            sql = "UPDATE T_COTI_ITEMS_NEW SET CANTIDAD='" & UCase(cant_EDITAR) & "', DESCRIPCION='" & descrip_editar & "',  P_U='" & prec_unit_editar & "', PREC_TOTAL='" & prec_total_editar & "', IGV= '" & igv_editar & "', PORCEN_UTIL='" & POR_UTIL & "', UTILIDAD='" & UTIL_ACT & "', UND='" & UND & "' WHERE COD='" & cod_editar & "'"
+            sql = "UPDATE T_COTI_ITEMS_NEW SET CANTIDAD='" & UCase(cant_editar) & "', DESCRIPCION='" & descrip_editar & "',  UND='" & unidad & "', P_U='" & p_u_editar & "', IGV= '" & igv_local & "', SUB_TOTAL='" & st_local & "', IGV_TOTAL='" & igv_total & "', TOTAL='" & t_local & "', POR_UTIL='" & por_util & "' , UTILIDAD='" & util_total & "' , PU_UTIL='" & p_u_util_editar & "' , IGV_PU_UTIL='" & igv_pu_util_edit & "', SUBTOTAL_UTIL='" & st_venta & "' , IGV_TOTAL_UTIL='" & igv_total_util_pu & "', TOTOAL_UTIL='" & t_venta & "' WHERE COD='" & cod_editar & "'"
             Form_Reg_SRV_SQL.conectar()
             com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
             res = com.ExecuteNonQuery
