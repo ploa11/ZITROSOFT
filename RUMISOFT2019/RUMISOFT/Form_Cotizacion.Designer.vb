@@ -144,6 +144,10 @@ Partial Class Form_Cotizacion
         Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader17 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TextBox28 = New System.Windows.Forms.TextBox()
+        Me.TextBox29 = New System.Windows.Forms.TextBox()
+        Me.TextBox30 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         CType(Me.dgv2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -937,7 +941,7 @@ Partial Class Form_Cotizacion
         Me.TextBox21.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox21.Enabled = False
-        Me.TextBox21.Location = New System.Drawing.Point(765, 694)
+        Me.TextBox21.Location = New System.Drawing.Point(593, 692)
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.Size = New System.Drawing.Size(110, 20)
         Me.TextBox21.TabIndex = 95
@@ -945,7 +949,7 @@ Partial Class Form_Cotizacion
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(694, 697)
+        Me.Label27.Location = New System.Drawing.Point(522, 695)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(40, 15)
         Me.Label27.TabIndex = 94
@@ -956,7 +960,7 @@ Partial Class Form_Cotizacion
         Me.TextBox20.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox20.Enabled = False
-        Me.TextBox20.Location = New System.Drawing.Point(765, 664)
+        Me.TextBox20.Location = New System.Drawing.Point(593, 662)
         Me.TextBox20.Name = "TextBox20"
         Me.TextBox20.Size = New System.Drawing.Size(110, 20)
         Me.TextBox20.TabIndex = 93
@@ -964,7 +968,7 @@ Partial Class Form_Cotizacion
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(694, 667)
+        Me.Label26.Location = New System.Drawing.Point(522, 665)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(26, 15)
         Me.Label26.TabIndex = 92
@@ -975,7 +979,7 @@ Partial Class Form_Cotizacion
         Me.TextBox19.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox19.Enabled = False
-        Me.TextBox19.Location = New System.Drawing.Point(765, 599)
+        Me.TextBox19.Location = New System.Drawing.Point(593, 597)
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.Size = New System.Drawing.Size(110, 20)
         Me.TextBox19.TabIndex = 91
@@ -983,7 +987,7 @@ Partial Class Form_Cotizacion
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(692, 635)
+        Me.Label25.Location = New System.Drawing.Point(520, 633)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(63, 15)
         Me.Label25.TabIndex = 90
@@ -1147,7 +1151,7 @@ Partial Class Form_Cotizacion
         Me.TextBox25.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox25.Enabled = False
-        Me.TextBox25.Location = New System.Drawing.Point(765, 629)
+        Me.TextBox25.Location = New System.Drawing.Point(593, 627)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.Size = New System.Drawing.Size(110, 20)
         Me.TextBox25.TabIndex = 107
@@ -1155,7 +1159,7 @@ Partial Class Form_Cotizacion
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(694, 601)
+        Me.Label33.Location = New System.Drawing.Point(522, 599)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(55, 15)
         Me.Label33.TabIndex = 106
@@ -1254,12 +1258,55 @@ Partial Class Form_Cotizacion
         '
         Me.ColumnHeader17.Text = "MONEDA"
         '
+        'TextBox28
+        '
+        Me.TextBox28.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox28.Enabled = False
+        Me.TextBox28.Location = New System.Drawing.Point(750, 624)
+        Me.TextBox28.Name = "TextBox28"
+        Me.TextBox28.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox28.TabIndex = 109
+        '
+        'TextBox29
+        '
+        Me.TextBox29.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox29.Enabled = False
+        Me.TextBox29.Location = New System.Drawing.Point(750, 659)
+        Me.TextBox29.Name = "TextBox29"
+        Me.TextBox29.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox29.TabIndex = 110
+        '
+        'TextBox30
+        '
+        Me.TextBox30.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox30.Enabled = False
+        Me.TextBox30.Location = New System.Drawing.Point(750, 690)
+        Me.TextBox30.Name = "TextBox30"
+        Me.TextBox30.Size = New System.Drawing.Size(110, 20)
+        Me.TextBox30.TabIndex = 111
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(763, 599)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(77, 15)
+        Me.Label7.TabIndex = 112
+        Me.Label7.Text = "PRECIO VENTA"
+        '
         'Form_Cotizacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ClientSize = New System.Drawing.Size(1281, 718)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.TextBox30)
+        Me.Controls.Add(Me.TextBox29)
+        Me.Controls.Add(Me.TextBox28)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.TextBox25)
         Me.Controls.Add(Me.Label33)
@@ -1427,4 +1474,8 @@ Partial Class Form_Cotizacion
     Friend WithEvents ColumnHeader15 As ColumnHeader
     Friend WithEvents ColumnHeader16 As ColumnHeader
     Friend WithEvents ColumnHeader17 As ColumnHeader
+    Friend WithEvents TextBox28 As TextBox
+    Friend WithEvents TextBox29 As TextBox
+    Friend WithEvents TextBox30 As TextBox
+    Friend WithEvents Label7 As Label
 End Class

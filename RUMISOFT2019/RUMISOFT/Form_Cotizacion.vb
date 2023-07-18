@@ -825,18 +825,22 @@ Public Class Form_Cotizacion
         Try
             For o = 0 To ListView1.Items.Count - 1
                 If accion = "guardar" Then
-                    sql = "select *from T_COTI_ITEMS_NEW where  COD='" + ListView1.Items(o).SubItems(0).Text + "'"
+                    sql = "select *from T_COTI_ITEMS_NEW where  COD='" + ListView1.Items(o).SubItems(1).Text + "'"
                     Form_Reg_SRV_SQL.conectar()
                     com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
                     dr = com.ExecuteReader
+
+
                     If dr.Read Then
                         MessageBox.Show("Los Datos ya Existen", "ZITRO", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         dr.Close()
                         Form_Reg_SRV_SQL.conexion.Close()
                     Else
+                        'MessageBox.Show("Los Datos ya Existen para variar", "ZITRO", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         buscar_copiarCOTI()
+                        ' MessageBox.Show("Los Datos ya Existen para variar", CODIGO, MessageBoxButtons.OK, MessageBoxIcon.Error)
                         Dim COD As String = CODIGO
-
+                        'MessageBox.Show("Los Datos ya Existen para variar", COD, MessageBoxButtons.OK, MessageBoxIcon.Error)
 
                         Dim CANTIDAD As String = ListView1.Items(o).SubItems(1).Text
                         Dim DESCRIP As String = ListView1.Items(o).SubItems(2).Text
@@ -853,13 +857,13 @@ Public Class Form_Cotizacion
                         Dim SUB_TOTAL_UTIL As String = ListView1.Items(o).SubItems(13).Text
                         Dim IGV_TOTAL_UTIL As String = ListView1.Items(o).SubItems(14).Text
                         Dim TOTAL_UTIL As String = ListView1.Items(o).SubItems(15).Text
-
+                        ' MessageBox.Show("Los Datos ya Existen para variar", TOTAL_UTIL, MessageBoxButtons.OK, MessageBoxIcon.Error)
                         'Dim PIO As String = ListView1.Items(o).SubItems(10).Text
                         'Dim OBS As String = ListView1.Items(o).SubItems(11).Text
                         ' Dim FEC As String = DateTimePicker5.Value.ToString("yyyyMMdd")
                         ' Dim EST As String = ListView1.Items(o).SubItems(13).Text
 
-                        sql = "INSERT INTO T_COTI_ITEMS_NEW (COD,COD_COTI,CANTIDAD,DESCRIPCION,UND,P_U,IGV,SUB_TOTAL,IGV_TOTAL, POR_UTIL, UTILIDAD, PU_UTIL, IGV_PU_UTIL,SUBTOTAL_UTIL, IGV_TOTAL_UTIL, TOTAL_UTIL, MONEDA, FEC_REG) VALUES('" & COD & "','" & UCase(TextBox23.Text) & "','" & CANTIDAD & "','" & UCase(DESCRIP) & "','" & UNDIDAD & "','" & P_U & "','" & IGV & "','" & SUBTOTAL & "','" & IGVTOTAL & "','" & TOTAL & "','" & POR_UTIL & "','" & UTILIDAD & "',' " & PU_UTIL & "','" & IGV_PU_UTIL & "','" & SUB_TOTAL_UTIL & "','" & IGV_TOTAL_UTIL & "','" & TOTAL_UTIL & "','" & moneda & "','" & DateTimePicker1.Value.ToString("yyyyMMdd") & "')"
+                        sql = "INSERT INTO T_COTI_ITEMS_NEW (COD,COD_COTI,CANTIDAD,DESCRIPCION,UND,P_U,IGV,SUB_TOTAL,IGV_TOTAL, TOTAL,POR_UTIL, UTILIDAD, PU_UTIL, IGV_PU_UTIL,SUBTOTAL_UTIL, IGV_TOTAL_UTIL, TOTOAL_UTIL, MONEDA, FEC_REG) VALUES('" & COD & "','" & UCase(TextBox23.Text) & "','" & CANTIDAD & "','" & UCase(DESCRIP) & "','" & UNDIDAD & "','" & P_U & "','" & IGV & "','" & SUBTOTAL & "','" & IGVTOTAL & "','" & TOTAL & "','" & POR_UTIL & "','" & UTILIDAD & "',' " & PU_UTIL & "','" & IGV_PU_UTIL & "','" & SUB_TOTAL_UTIL & "','" & IGV_TOTAL_UTIL & "','" & TOTAL_UTIL & "','" & moneda & "','" & DateTimePicker1.Value.ToString("yyyyMMdd") & "')"
                         Form_Reg_SRV_SQL.conectar()
                         com = New SqlClient.SqlCommand(sql, Form_Reg_SRV_SQL.conexion)
                         res = com.ExecuteNonQuery
@@ -1303,15 +1307,15 @@ Public Class Form_Cotizacion
         Dim cant_EDITAR, prec_unit_editar, prec_total_editar, igv_editar, util_bus, t_stotal, t_util, t_igv, tt As Integer
         accion = "guardar"
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
-            cod_editar = Trim(DataGridView1.Rows(i).Cells(0).Value)
-            cod_coti_editar = Trim(DataGridView1.Rows(i).Cells(1).Value)
-            cant_EDITAR = (DataGridView1.Rows(i).Cells(2).Value)
-            descrip_editar = Trim(DataGridView1.Rows(i).Cells(3).Value)
-            prec_unit_editar = (DataGridView1.Rows(i).Cells(4).Value)
-            prec_total_editar = (DataGridView1.Rows(i).Cells(5).Value)
-            igv_editar = (DataGridView1.Rows(i).Cells(6).Value)
+            'cod_editar = Trim(DataGridView1.Rows(i).Cells(0).Value)
+            'cod_coti_editar = Trim(DataGridView1.Rows(i).Cells(1).Value)
+            'cant_EDITAR = (DataGridView1.Rows(i).Cells(2).Value)
+            'descrip_editar = Trim(DataGridView1.Rows(i).Cells(3).Value)
+            prec_unit_editar = (DataGridView1.Rows(i).Cells(7).Value)
+            prec_total_editar = (DataGridView1.Rows(i).Cells(9).Value)
+            igv_editar = (DataGridView1.Rows(i).Cells(8).Value)
             util_bus = (DataGridView1.Rows(i).Cells(8).Value)
-            t_stotal += prec_total_editar
+            t_stotal += prec_unit_editar
             t_util += util_bus
             t_igv += igv_editar
             tt += (prec_total_editar + util_bus + igv_editar)
