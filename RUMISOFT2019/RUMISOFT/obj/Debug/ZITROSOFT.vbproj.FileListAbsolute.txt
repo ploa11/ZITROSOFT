@@ -402,6 +402,7 @@ C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_Cotizacion.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_Cta_Emp.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_Impresion_OC.resources
+C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_Imprimir_Coti.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.form_ingreso_salida.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form1.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_local.resources
@@ -432,6 +433,7 @@ C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.inicio.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Resources.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.prioridad.resources
+C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.SELECCION_COTIZACION.resources
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\ZITROSOFT.vbproj.GenerateResource.cache
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\ZITROSOFT.vbproj.CoreCompileInputs.cache
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.exe.manifest
@@ -440,4 +442,3 @@ C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\ZITROSOFT.vbp
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.exe
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.xml
 C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.pdb
-C:\Users\Pedro\Documents\ZITROSOFT\RUMISOFT2019\RUMISOFT\obj\Debug\RUMISOFT.Form_Imprimir_Coti.resources

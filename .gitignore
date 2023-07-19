@@ -1,0 +1,10 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/RUMISOFT2019/RUMISOFT/Form_formato_imp_cotizacion.Designer.vb
+/RUMISOFT2019/RUMISOFT/Form_formato_imp_cotizacion.resx
+/RUMISOFT2019/RUMISOFT/Form_formato_imp_cotizacion.vb
+/RUMISOFT2019/RUMISOFT/Form_Cotizacion.Designer.vb
+/RUMISOFT2019/RUMISOFT/Form_Cotizacion.resx
+/RUMISOFT2019/RUMISOFT/Form_Cotizacion.vb

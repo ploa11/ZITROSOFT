@@ -1027,18 +1027,19 @@ Partial Class Form_Cotizacion
         '
         Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(10, 51)
+        Me.Button11.Location = New System.Drawing.Point(202, 125)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(181, 20)
         Me.Button11.TabIndex = 25
         Me.Button11.Text = "CREAR COTIZACION INTERNA"
         Me.Button11.UseVisualStyleBackColor = False
+        Me.Button11.Visible = False
         '
         'Button12
         '
         Me.Button12.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button12.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(10, 30)
+        Me.Button12.Location = New System.Drawing.Point(10, 33)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(181, 21)
         Me.Button12.TabIndex = 26
@@ -1049,7 +1050,7 @@ Partial Class Form_Cotizacion
         '
         Me.Button13.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(10, 89)
+        Me.Button13.Location = New System.Drawing.Point(11, 57)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(181, 22)
         Me.Button13.TabIndex = 27
@@ -1091,20 +1092,21 @@ Partial Class Form_Cotizacion
         Me.Button24.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button24.Location = New System.Drawing.Point(197, 70)
         Me.Button24.Name = "Button24"
-        Me.Button24.Size = New System.Drawing.Size(186, 20)
+        Me.Button24.Size = New System.Drawing.Size(186, 41)
         Me.Button24.TabIndex = 106
-        Me.Button24.Text = "Vista Preliminar de Cotizacion"
+        Me.Button24.Text = "Vista Preliminar e Impresion de Cotizacion"
         Me.Button24.UseVisualStyleBackColor = False
         '
         'Button23
         '
         Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button23.Location = New System.Drawing.Point(197, 91)
+        Me.Button23.Location = New System.Drawing.Point(191, 126)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(186, 20)
         Me.Button23.TabIndex = 105
         Me.Button23.Text = "Imprimir Cotizacio"
         Me.Button23.UseVisualStyleBackColor = False
+        Me.Button23.Visible = False
         '
         'Button22
         '
@@ -1120,12 +1122,13 @@ Partial Class Form_Cotizacion
         '
         Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button20.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button20.Location = New System.Drawing.Point(10, 70)
+        Me.Button20.Location = New System.Drawing.Point(194, 125)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(181, 20)
         Me.Button20.TabIndex = 90
         Me.Button20.Text = "CREAR COTIZACION VENTA"
         Me.Button20.UseVisualStyleBackColor = False
+        Me.Button20.Visible = False
         '
         'Button15
         '
@@ -1178,6 +1181,9 @@ Partial Class Form_Cotizacion
         'PrintDialog1
         '
         Me.PrintDialog1.UseEXDialog = True
+        '
+        'PrintDocument4
+        '
         '
         'ListView1
         '

@@ -23,7 +23,6 @@ Partial Class Form_Imprimir_Coti
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lineatop = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.CONSIDERACIONES = New System.Windows.Forms.Label()
         Me.LINEAFONDO = New System.Windows.Forms.Label()
         Me.UTIL = New System.Windows.Forms.Label()
@@ -71,12 +70,11 @@ Partial Class Form_Imprimir_Coti
         Me.Label_oc = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MONT_UTIL = New System.Windows.Forms.Label()
         Me.Label_UTIL = New System.Windows.Forms.Label()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.logo = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lineatop
@@ -88,16 +86,6 @@ Partial Class Form_Imprimir_Coti
         Me.lineatop.TabIndex = 99
         Me.lineatop.Text = "_________________________________________________________________________________" &
     "_____________________________________________________________________________"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.RUMISOFT.My.Resources.Resources.firma_zitro2
-        Me.PictureBox2.Location = New System.Drawing.Point(416, 638)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(119, 68)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 98
-        Me.PictureBox2.TabStop = False
         '
         'CONSIDERACIONES
         '
@@ -265,7 +253,7 @@ Partial Class Form_Imprimir_Coti
         'TOTAL
         '
         Me.TOTAL.AutoSize = True
-        Me.TOTAL.Location = New System.Drawing.Point(690, 696)
+        Me.TOTAL.Location = New System.Drawing.Point(690, 699)
         Me.TOTAL.Name = "TOTAL"
         Me.TOTAL.Size = New System.Drawing.Size(13, 13)
         Me.TOTAL.TabIndex = 79
@@ -274,7 +262,7 @@ Partial Class Form_Imprimir_Coti
         'Label_TOTAL
         '
         Me.Label_TOTAL.AutoSize = True
-        Me.Label_TOTAL.Location = New System.Drawing.Point(565, 696)
+        Me.Label_TOTAL.Location = New System.Drawing.Point(565, 699)
         Me.Label_TOTAL.Name = "Label_TOTAL"
         Me.Label_TOTAL.Size = New System.Drawing.Size(63, 13)
         Me.Label_TOTAL.TabIndex = 78
@@ -283,7 +271,7 @@ Partial Class Form_Imprimir_Coti
         'IGV
         '
         Me.IGV.AutoSize = True
-        Me.IGV.Location = New System.Drawing.Point(690, 676)
+        Me.IGV.Location = New System.Drawing.Point(690, 679)
         Me.IGV.Name = "IGV"
         Me.IGV.Size = New System.Drawing.Size(13, 13)
         Me.IGV.TabIndex = 77
@@ -292,16 +280,16 @@ Partial Class Form_Imprimir_Coti
         'Label_IGV
         '
         Me.Label_IGV.AutoSize = True
-        Me.Label_IGV.Location = New System.Drawing.Point(565, 676)
+        Me.Label_IGV.Location = New System.Drawing.Point(565, 679)
         Me.Label_IGV.Name = "Label_IGV"
-        Me.Label_IGV.Size = New System.Drawing.Size(49, 13)
+        Me.Label_IGV.Size = New System.Drawing.Size(46, 13)
         Me.Label_IGV.TabIndex = 76
-        Me.Label_IGV.Text = "IGV S/. :"
+        Me.Label_IGV.Text = "IGV S/ :"
         '
         'SUBTOTAL
         '
         Me.SUBTOTAL.AutoSize = True
-        Me.SUBTOTAL.Location = New System.Drawing.Point(690, 637)
+        Me.SUBTOTAL.Location = New System.Drawing.Point(690, 640)
         Me.SUBTOTAL.Name = "SUBTOTAL"
         Me.SUBTOTAL.Size = New System.Drawing.Size(13, 13)
         Me.SUBTOTAL.TabIndex = 75
@@ -310,7 +298,7 @@ Partial Class Form_Imprimir_Coti
         'Label_SUBTOTAL
         '
         Me.Label_SUBTOTAL.AutoSize = True
-        Me.Label_SUBTOTAL.Location = New System.Drawing.Point(565, 637)
+        Me.Label_SUBTOTAL.Location = New System.Drawing.Point(565, 640)
         Me.Label_SUBTOTAL.Name = "Label_SUBTOTAL"
         Me.Label_SUBTOTAL.Size = New System.Drawing.Size(82, 13)
         Me.Label_SUBTOTAL.TabIndex = 74
@@ -525,20 +513,10 @@ Partial Class Form_Imprimir_Coti
         Me.Label1.TabIndex = 51
         Me.Label1.Text = "ZITRO SOLUCIONES INTEGRALES S.A.C"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.RUMISOFT.My.Resources.Resources.nlzitro2
-        Me.PictureBox1.Location = New System.Drawing.Point(65, 30)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(119, 108)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 50
-        Me.PictureBox1.TabStop = False
-        '
         'MONT_UTIL
         '
         Me.MONT_UTIL.AutoSize = True
-        Me.MONT_UTIL.Location = New System.Drawing.Point(690, 657)
+        Me.MONT_UTIL.Location = New System.Drawing.Point(690, 660)
         Me.MONT_UTIL.Name = "MONT_UTIL"
         Me.MONT_UTIL.Size = New System.Drawing.Size(13, 13)
         Me.MONT_UTIL.TabIndex = 101
@@ -547,21 +525,31 @@ Partial Class Form_Imprimir_Coti
         'Label_UTIL
         '
         Me.Label_UTIL.AutoSize = True
-        Me.Label_UTIL.Location = New System.Drawing.Point(565, 657)
+        Me.Label_UTIL.Location = New System.Drawing.Point(565, 660)
         Me.Label_UTIL.Name = "Label_UTIL"
         Me.Label_UTIL.Size = New System.Drawing.Size(75, 13)
         Me.Label_UTIL.TabIndex = 100
         Me.Label_UTIL.Text = "UTILIDAD S/."
+        '
+        'logo
+        '
+        Me.logo.Image = Global.RUMISOFT.My.Resources.Resources.nlzitro2
+        Me.logo.Location = New System.Drawing.Point(20, 13)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(99, 95)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.logo.TabIndex = 102
+        Me.logo.TabStop = False
         '
         'Form_Imprimir_Coti
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(771, 749)
+        Me.Controls.Add(Me.logo)
         Me.Controls.Add(Me.MONT_UTIL)
         Me.Controls.Add(Me.Label_UTIL)
         Me.Controls.Add(Me.lineatop)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.CONSIDERACIONES)
         Me.Controls.Add(Me.LINEAFONDO)
         Me.Controls.Add(Me.UTIL)
@@ -609,20 +597,17 @@ Partial Class Form_Imprimir_Coti
         Me.Controls.Add(Me.Label_oc)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form_Imprimir_Coti"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form_Imprimir_Coti"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lineatop As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents CONSIDERACIONES As Label
     Friend WithEvents LINEAFONDO As Label
     Friend WithEvents UTIL As Label
@@ -670,7 +655,7 @@ Partial Class Form_Imprimir_Coti
     Friend WithEvents Label_oc As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents MONT_UTIL As Label
     Friend WithEvents Label_UTIL As Label
+    Friend WithEvents logo As PictureBox
 End Class

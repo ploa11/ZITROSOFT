@@ -959,17 +959,18 @@ Partial Class Form_Orden_Compra
         'Button11
         '
         Me.Button11.Enabled = False
-        Me.Button11.Location = New System.Drawing.Point(19, 35)
+        Me.Button11.Location = New System.Drawing.Point(19, 701)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(158, 23)
         Me.Button11.TabIndex = 83
         Me.Button11.Text = " Crear OC en EXCEL"
         Me.Button11.UseVisualStyleBackColor = True
+        Me.Button11.Visible = False
         '
         'Button12
         '
         Me.Button12.Enabled = False
-        Me.Button12.Location = New System.Drawing.Point(19, 58)
+        Me.Button12.Location = New System.Drawing.Point(19, 36)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(158, 23)
         Me.Button12.TabIndex = 84
@@ -979,7 +980,7 @@ Partial Class Form_Orden_Compra
         'Button13
         '
         Me.Button13.Enabled = False
-        Me.Button13.Location = New System.Drawing.Point(19, 81)
+        Me.Button13.Location = New System.Drawing.Point(19, 61)
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(158, 21)
         Me.Button13.TabIndex = 85
@@ -995,7 +996,6 @@ Partial Class Form_Orden_Compra
         Me.GroupBox5.Controls.Add(Me.Button24)
         Me.GroupBox5.Controls.Add(Me.Button17)
         Me.GroupBox5.Controls.Add(Me.Button13)
-        Me.GroupBox5.Controls.Add(Me.Button11)
         Me.GroupBox5.Controls.Add(Me.Button12)
         Me.GroupBox5.Location = New System.Drawing.Point(899, 509)
         Me.GroupBox5.Name = "GroupBox5"
@@ -1006,7 +1006,7 @@ Partial Class Form_Orden_Compra
         'Button23
         '
         Me.Button23.Enabled = False
-        Me.Button23.Location = New System.Drawing.Point(19, 193)
+        Me.Button23.Location = New System.Drawing.Point(19, 134)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(158, 21)
         Me.Button23.TabIndex = 89
@@ -1015,7 +1015,7 @@ Partial Class Form_Orden_Compra
         '
         'Button19
         '
-        Me.Button19.Location = New System.Drawing.Point(19, 126)
+        Me.Button19.Location = New System.Drawing.Point(19, 109)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(158, 23)
         Me.Button19.TabIndex = 40
@@ -1025,7 +1025,7 @@ Partial Class Form_Orden_Compra
         '
         'Button25
         '
-        Me.Button25.Location = New System.Drawing.Point(19, 170)
+        Me.Button25.Location = New System.Drawing.Point(19, 185)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(158, 23)
         Me.Button25.TabIndex = 121
@@ -1034,7 +1034,7 @@ Partial Class Form_Orden_Compra
         '
         'Button24
         '
-        Me.Button24.Location = New System.Drawing.Point(19, 149)
+        Me.Button24.Location = New System.Drawing.Point(19, 159)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(158, 22)
         Me.Button24.TabIndex = 87
@@ -1044,7 +1044,7 @@ Partial Class Form_Orden_Compra
         'Button17
         '
         Me.Button17.Enabled = False
-        Me.Button17.Location = New System.Drawing.Point(19, 103)
+        Me.Button17.Location = New System.Drawing.Point(19, 83)
         Me.Button17.Name = "Button17"
         Me.Button17.Size = New System.Drawing.Size(158, 23)
         Me.Button17.TabIndex = 88
@@ -1162,6 +1162,7 @@ Partial Class Form_Orden_Compra
         Me.Controls.Add(Me.Label33)
         Me.Controls.Add(Me.TextBox25)
         Me.Controls.Add(Me.Label32)
+        Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.Label30)

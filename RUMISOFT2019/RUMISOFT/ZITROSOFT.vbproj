@@ -25,7 +25,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -359,6 +359,12 @@
     <Compile Include="prioridad.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SELECCION_COTIZACION.Designer.vb">
+      <DependentUpon>SELECCION_COTIZACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SELECCION_COTIZACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="combos.resx">
@@ -480,6 +486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="prioridad.resx">
       <DependentUpon>prioridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SELECCION_COTIZACION.resx">
+      <DependentUpon>SELECCION_COTIZACION.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

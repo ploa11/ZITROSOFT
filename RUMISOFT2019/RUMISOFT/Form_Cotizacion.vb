@@ -249,8 +249,8 @@ Public Class Form_Cotizacion
                 'Dim item As ListViewItem = ListView1.SelectedItems(0)
                 ITEM = ListView1.SelectedItems(0)
                 rest = ITEM.SubItems(14).Text
-                rest_util = item.SubItems(6).Text
-                Me.ListView1.Items.Remove(item)
+                rest_util = ITEM.SubItems(6).Text
+                Me.ListView1.Items.Remove(ITEM)
                 j -= 1
                 ListView1.Items.Remove(ListView1.Items.Item(j))
             End If
@@ -379,6 +379,10 @@ Public Class Form_Cotizacion
 
     End Sub
 
+    Private Sub PrintDocument4_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument4.PrintPage
+
+    End Sub
+
     Dim dt As DataTable
     Private Sub Label30_Click(sender As Object, e As EventArgs) Handles Label30.Click
 
@@ -389,9 +393,10 @@ Public Class Form_Cotizacion
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
-        printLine = 0
-        Contador = 0
-        Form_Imprimir_Coti.lbNumeroPagina.Text = "0"
+        'printLine = 0
+        ' Contador = 0
+        'Form_Imprimir_Coti.lbNumeroPagina.Text = "0"
+        SELECCION_COTIZACION.Show()
     End Sub
 
     Private Sub Form_Cotizacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -1371,7 +1376,7 @@ Public Class Form_Cotizacion
         For i As Integer = 0 To DataGridView1.Rows.Count - 1
             cod_editar = Trim(DataGridView1.Rows(i).Cells(0).Value)
             cod_coti_editar = Trim(DataGridView1.Rows(i).Cells(1).Value)
-            cant_EDITAR = (DataGridView1.Rows(i).Cells(2).Value)
+            cant_editar = (DataGridView1.Rows(i).Cells(2).Value)
             descrip_editar = Trim(DataGridView1.Rows(i).Cells(3).Value)
             p_u_editar = (DataGridView1.Rows(i).Cells(5).Value)
             por_util = (DataGridView1.Rows(i).Cells(10).Value)
@@ -1385,7 +1390,7 @@ Public Class Form_Cotizacion
             util_local = (p_u_editar * (por_util / 100))
             util_total = util_local * cant_editar
             p_u_util_editar = (p_u_editar + util_local)
-            st_venta = p_u_util_editar*cant_editar
+            st_venta = p_u_util_editar * cant_editar
             igv_pu_util_edit = p_u_util_editar * porc_igv
             igv_total_util_pu = igv_pu_util_edit * cant_editar
             t_venta = st_venta + igv_total_util_pu
@@ -1822,26 +1827,26 @@ Public Class Form_Cotizacion
         Form_Imprimir_Coti.sres.Text = TextBox3.Text
         Form_Imprimir_Coti.ruc.Text = TextBox2.Text
         Form_Imprimir_Coti.direcc.Text = TextBox4.Text
-        Form_Imprimir_Coti.telefono.Text = TextBox5.Text
+        Form_Imprimir_Coti.telefono.Text = ""
         Form_Imprimir_Coti.fec_emision.Text = UCase(DateTimePicker1.Text)
-        Form_Imprimir_Coti.CONTACTO.Text = TextBox1.Text + " " & +TextBox9.Text
-        Form_Imprimir_Coti.USUARIO.Text = TextBox13.Text + " " & +TextBox9.Text
-        Form_Imprimir_Coti.UTIL.Text = TextBox23.Text
+        Form_Imprimir_Coti.CONTACTO.Text = TextBox1.Text + " " + TextBox9.Text
+        Form_Imprimir_Coti.USUARIO.Text = TextBox13.Text + " " + TextBox12.Text
+        Form_Imprimir_Coti.UTIL.Text = TextBox26.Text
         Form_Imprimir_Coti.f_venc.Text = UCase(DateTimePicker2.Text)
         Form_Imprimir_Coti.oc.Text = TextBox23.Text
         Form_Imprimir_Coti.OT.Text = TextBox7.Text
         Form_Imprimir_Coti.LOCAL.Text = TextBox24.Text
         Form_Imprimir_Coti.UBI_LOCAL.Text = TextBox8.Text
-        Form_Imprimir_Coti.direcc.Text = TextBox7.Text
+        Form_Imprimir_Coti.DIR_LOCAL.Text = TextBox7.Text
         Try
-            sql = "select COD AS [ITEM], DESCRIP AS [DESCRIPCION], UND, CANTIDAD, PREC_UNIT AS [P.UNITARIO], PREC_TOTAL AS [SUBTOTAL] from T_OC_ITEMS WHERE COD_OC='" + TextBox23.Text + "'"
+            sql = "select *from T_COTI_ITEMS_NEW WHERE COD_COTI='" + TextBox23.Text + "'"
             Form_Reg_SRV_SQL.conectar()
             da = New SqlClient.SqlDataAdapter(sql, Form_Reg_SRV_SQL.conexion)
             cb = New SqlClient.SqlCommandBuilder(da)
             ds = New DataSet
-            da.Fill(ds, "T_COTI_ITEMS")
-            Form_Impresion_OC.DataGridView1.DataSource = ds
-            Form_Impresion_OC.DataGridView1.DataMember = "T_COTI_ITEMS"
+            da.Fill(ds, "T_COTI_ITEMS_NEW")
+            Form_Imprimir_Coti.DataGridView1.DataSource = ds
+            Form_Imprimir_Coti.DataGridView1.DataMember = "T_COTI_ITEMS_NEW"
             Form_Reg_SRV_SQL.conexion.Close()
         Catch ex As Exception
             MessageBox.Show("Error al mostrar los datos", "ZITRO")
@@ -1886,9 +1891,10 @@ Public Class Form_Cotizacion
         ' MsgBox("DATOS ACTUALIZADOS CORRECTAMENTE", MsgBoxStyle.Information, "ACTUALIZACION")
         'Button17.Enabled = False
         ' llenar_PRO_OC()
+        'Form_Imprimir_Coti.Show()
     End Sub
     Private Sub item3()
-        Dim IGV_ITEM, IGV_TOTAL_ITEM, SUBTOTAL_ITEM, TOTAL_ITEM, MONT_UTIL, IGV_UTIL, SUB_TOTAL_UTIL, IGV_TOT_UTIL, TOTAL_UTIL_ITEM As Decimal
+        Dim IGV_ITEM, IGV_TOTAL_ITEM, SUBTOTAL_ITEM, TOTAL_ITEM, UTIL_TOTAL, MONT_UTIL, IGV_UTIL, SUB_TOTAL_UTIL, IGV_TOT_UTIL, TOTAL_UTIL_ITEM As Decimal
         Dim CANT_ITEM As Integer
         j += 1
         Dim ITEM_I As String
@@ -1914,21 +1920,22 @@ Public Class Form_Cotizacion
                 linea.SubItems.Add(Format(IGV_TOTAL_ITEM, "0.00"))
                 linea.SubItems.Add(Format(TOTAL_ITEM, "0.00"))
                 linea.SubItems.Add(TextBox26.Text)
-                MONT_UTIL = P_U * porc_util
+                MONT_UTIL = (SUBTOTAL_ITEM * porc_util)
+                'UTIL_TOTAL = MONT_UTIL * CANT_ITEM
                 linea.SubItems.Add(Format(MONT_UTIL, "0.00"))
-                linea.SubItems.Add(Format(P_U + MONT_UTIL, "0.00"))
-                IGV_UTIL = (P_U + MONT_UTIL) * porc_igv
+                linea.SubItems.Add(Format(P_U + (P_U * porc_util), "0.00"))
+                IGV_UTIL = (P_U + (P_U * porc_util)) * porc_igv
                 linea.SubItems.Add(Format(IGV_UTIL, "0.00"))
-                SUB_TOTAL_UTIL = (P_U + MONT_UTIL) * CANT_ITEM
+                SUB_TOTAL_UTIL = (P_U + (P_U * porc_util)) * CANT_ITEM
                 linea.SubItems.Add(Format(SUB_TOTAL_UTIL, "0.00"))
                 IGV_TOT_UTIL = IGV_UTIL * CANT_ITEM
                 linea.SubItems.Add(Format(IGV_TOT_UTIL, "0.00"))
                 TOTAL_UTIL_ITEM = SUB_TOTAL_UTIL + IGV_TOT_UTIL
                 linea.SubItems.Add(Format(TOTAL_UTIL_ITEM, "0.00"))
                 linea.SubItems.Add(moneda)
-                S = SUB_TOTAL_UTIL
+                S = P_U * CANT_ITEM
                 U = MONT_UTIL
-                IG = IGV_UTIL
+                IG = IGV_TOT_UTIL
 
                 ' ListView1.Items.Add(j)
 
@@ -1951,10 +1958,10 @@ Public Class Form_Cotizacion
             ST += S
             UT += U
             IT += IG
-            TextBox19.Text = Format(UT, "0.00")
-            TextBox25.Text = Format(S, "0.00")
-            TextBox20.Text = Format(IT, "0.00")
-            TextBox21.Text = Format(ST + IT, "0.00")
+            TextBox19.Text = Format("0.00", UT)
+            TextBox25.Text = Format("0.00", ST)
+            TextBox20.Text = Format("0.00", IT)
+            TextBox21.Text = Format("0.00", ST + UT+IT)
         Catch ex As Exception
 
         End Try
