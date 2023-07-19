@@ -1357,8 +1357,8 @@ Public Class Form_Cotizacion
         Next
         TextBox19.Text = Format("0.00", util_local2)
         TextBox25.Text = Format("0.00", st_local2)
-        TextBox20.Text = Format("0.00", igv_local2)
-        TextBox21.Text = Format("0.00", t_local2)
+        TextBox20.Text = Format("0.00", igv_venta2)
+        TextBox21.Text = Format("0.00", t_venta2)
         TextBox28.Text = Format("0.00", st_venta2)
         TextBox29.Text = Format("0.00", igv_venta2)
         TextBox30.Text = Format("0.00", t_venta2)
@@ -1933,9 +1933,9 @@ Public Class Form_Cotizacion
                 TOTAL_UTIL_ITEM = SUB_TOTAL_UTIL + IGV_TOT_UTIL
                 linea.SubItems.Add(Format(TOTAL_UTIL_ITEM, "0.00"))
                 linea.SubItems.Add(moneda)
-                S = P_U * CANT_ITEM
+                S = SUBTOTAL_ITEM
                 U = MONT_UTIL
-                IG = IGV_TOT_UTIL
+                IG = IGV_UTIL * CANT_ITEM
 
                 ' ListView1.Items.Add(j)
 
@@ -1961,7 +1961,7 @@ Public Class Form_Cotizacion
             TextBox19.Text = Format("0.00", UT)
             TextBox25.Text = Format("0.00", ST)
             TextBox20.Text = Format("0.00", IT)
-            TextBox21.Text = Format("0.00", ST + UT+IT)
+            TextBox21.Text = Format("0.00", ST + UT + IT)
         Catch ex As Exception
 
         End Try

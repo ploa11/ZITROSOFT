@@ -20,7 +20,52 @@ Public Class SELECCION_COTIZACION
     Dim printLine As Integer = 0
     Dim Contador As Integer = 0
     Dim PosicionSinEncabezado As Integer = Form_Imprimir_Coti.P1.Top
+    Dim considerar, considerar2 As String
+
+
     Private Sub SELECCION_COTIZACION_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        considerar = " 1. Los precios están expresados en soles y no incluyen el Impuesto General a las Ventas.
+2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
+3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
+se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
+insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
+inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
+4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
+cantidades podrá variar las condiciones ofrecidas.
+5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
+6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
+De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
+sin previo aviso.
+7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
+
+
+        considerar2 = " PLAZO DE ENTREGA 90 DIAS.
+1. Los precios están expresados en dólares americanos y no incluyen el Impuesto General a las Ventas.
+2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
+3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
+se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
+insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
+inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
+4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
+cantidades podrá variar las condiciones ofrecidas.
+5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
+6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
+De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
+sin previo aviso.
+7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
+
+        If Form_Cotizacion.moneda = "SOLES" Then
+            Form_Imprimir_Coti.Label_SUBTOTAL.Text = "SUBTOTAL S/."
+            Form_Imprimir_Coti.Label_UTIL.Text = "UTILIDAD S/."
+            Form_Imprimir_Coti.Label_IGV.Text = "IGV S/."
+            Form_Imprimir_Coti.Label_TOTAL.Text = "TOTAL S/."
+        Else
+            Form_Imprimir_Coti.Label_SUBTOTAL.Text = "SUBTOTAL $."
+            Form_Imprimir_Coti.Label_UTIL.Text = "UTILIDAD $."
+            Form_Imprimir_Coti.Label_IGV.Text = "IGV $."
+            Form_Imprimir_Coti.Label_TOTAL.Text = "TOTAL $."
+
+        End If
 
     End Sub
 
@@ -134,20 +179,25 @@ Public Class SELECCION_COTIZACION
         Form_Imprimir_Coti.SUBTOTAL.Text = Format("0.00", SUBTOTAL_COTI)
         Form_Imprimir_Coti.IGV.Text = Format("0.00", IGV_COTI)
         Form_Imprimir_Coti.TOTAL.Text = Format("0.00", TOTAL_COTI)
-        CONSIDERACIONES = " PLAZO DE ENTREGA 90 DIAS.
-1. Los precios están expresados en dólares americanos y no incluyen el Impuesto General a las Ventas.
-2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
-3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
-se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
-insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
-inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
-4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
-cantidades podrá variar las condiciones ofrecidas.
-5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
-6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
-De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
-sin previo aviso.
-7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
+        If Form_Cotizacion.moneda = "SOLES" Then
+            CONSIDERACIONES = considerar
+        Else
+            CONSIDERACIONES = considerar2
+        End If
+        'CONSIDERACIONES = " PLAZO DE ENTREGA 90 DIAS.
+        '1. Los precios están expresados en dólares americanos y no incluyen el Impuesto General a las Ventas.
+        '2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
+        '3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
+        'se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
+        'insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
+        'inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
+        '4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
+        'cantidades podrá variar las condiciones ofrecidas.
+        '5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
+        '6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
+        'De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
+        'sin previo aviso.
+        '7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
 
         Form_Imprimir_Coti.CONSIDERACIONES.Text = CONSIDERACIONES
         'Con el contador solamente imprimimos la parte final del reporte si ha alcanzado el total de registros
@@ -283,19 +333,13 @@ sin previo aviso.
         Form_Imprimir_Coti.SUBTOTAL.Text = Format("0.00", SUBTOTAL_COTI)
         Form_Imprimir_Coti.IGV.Text = Format("0.00", IGV_COTI)
         Form_Imprimir_Coti.TOTAL.Text = Format("0.00", TOTAL_COTI)
-        CONSIDERACIONES = "1. Los precios están expresados en dólares americanos y no incluyen el Impuesto General a las Ventas.
-2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
-3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
-se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
-insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
-inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
-4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
-cantidades podrá variar las condiciones ofrecidas.
-5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
-6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
-De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
-sin previo aviso.
-7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
+
+        If Form_Cotizacion.moneda = "SOLES" Then
+            CONSIDERACIONES = considerar
+        Else
+            CONSIDERACIONES = considerar2
+        End If
+
         Form_Imprimir_Coti.CONSIDERACIONES.Text = CONSIDERACIONES
         'Con el contador solamente imprimimos la parte final del reporte si ha alcanzado el total de registros
         'Si deseamos repetir la parte final del reporte en cada pagina, debemos quitar en contador
@@ -429,19 +473,11 @@ sin previo aviso.
         Form_Imprimir_Coti.SUBTOTAL.Text = Format("0.00", SUBTOTAL_COTI)
         Form_Imprimir_Coti.IGV.Text = Format("0.00", IGV_COTI)
         Form_Imprimir_Coti.TOTAL.Text = Format("0.00", TOTAL_COTI)
-        CONSIDERACIONES = "1. Los precios están expresados en dólares americanos y no incluyen el Impuesto General a las Ventas.
-2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
-3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
-se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
-insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
-inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
-4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
-cantidades podrá variar las condiciones ofrecidas.
-5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
-6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
-De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
-sin previo aviso.
-7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
+        If Form_Cotizacion.moneda = "SOLES" Then
+            CONSIDERACIONES = considerar
+        Else
+            CONSIDERACIONES = considerar2
+        End If
         Form_Imprimir_Coti.CONSIDERACIONES.Text = CONSIDERACIONES
         'Con el contador solamente imprimimos la parte final del reporte si ha alcanzado el total de registros
         'Si deseamos repetir la parte final del reporte en cada pagina, debemos quitar en contador
@@ -579,19 +615,11 @@ sin previo aviso.
         Form_Imprimir_Coti.SUBTOTAL.Text = Format("0.00", SUBTOTAL_COTI)
         Form_Imprimir_Coti.IGV.Text = Format("0.00", IGV_COTI)
         Form_Imprimir_Coti.TOTAL.Text = Format("0.00", TOTAL_COTI)
-        CONSIDERACIONES = "1. Los precios están expresados en dólares americanos y no incluyen el Impuesto General a las Ventas.
-2. El plazo de entrega cuenta a partir de la confirmación de la recepción y conformidad de su Orden de Compra.
-3. ZITRO SOLUCIONES INTEGRALES SAC no se hará responsable por incumplimientos en sus obligaciones cuando éstas 
-se vean afectadas por causas de fuerza mayor o ajenas a su voluntad, tales como guerras, hurto, vandalismo, conmoción civil, huelgas,
-insurrección, escasez de insumos, reprogramación de fábrica, dumping, bloqueos, trasbordos, cancelación de vuelos o naves, 
-inconsistencia de carga, proceso aduanero, epidemias, siniestros, desastres naturales.
-4. Las condiciones y precios de esta Proforma están sujetos a las cantidades solicitadas. Cualquier variación de estas
-cantidades podrá variar las condiciones ofrecidas.
-5. El CLIENTE aceptará entregas y facturación parciales, así como el pago de las mismas en las fechas de vencimiento.
-6. Los precios no incluyen ningún trabajo de ingeniería, instalación, mantenimiento, pruebas y certificaciones de los materiales. 
-De acuerdo con lo expresado por cada fabricante, las especificaciones técnicas de sus productos están sujetas a cambio
-sin previo aviso.
-7. Los diseños y configuraciones son sugerencias que deberán ser validadas por el personal calificado del Cliente."
+        If Form_Cotizacion.moneda = "SOLES" Then
+            CONSIDERACIONES = considerar
+        Else
+            CONSIDERACIONES = considerar2
+        End If
         Form_Imprimir_Coti.CONSIDERACIONES.Text = CONSIDERACIONES
         'Con el contador solamente imprimimos la parte final del reporte si ha alcanzado el total de registros
         'Si deseamos repetir la parte final del reporte en cada pagina, debemos quitar en contador

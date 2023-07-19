@@ -347,7 +347,7 @@ Partial Class Form_Cotizacion
         '
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(18, 176)
+        Me.Label35.Location = New System.Drawing.Point(18, 152)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(45, 13)
         Me.Label35.TabIndex = 109
@@ -356,7 +356,7 @@ Partial Class Form_Cotizacion
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(105, 178)
+        Me.Label34.Location = New System.Drawing.Point(105, 154)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(15, 15)
         Me.Label34.TabIndex = 110
@@ -376,7 +376,7 @@ Partial Class Form_Cotizacion
         '
         Me.TextBox26.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox26.Location = New System.Drawing.Point(70, 173)
+        Me.TextBox26.Location = New System.Drawing.Point(70, 149)
         Me.TextBox26.Name = "TextBox26"
         Me.TextBox26.Size = New System.Drawing.Size(29, 20)
         Me.TextBox26.TabIndex = 111
@@ -470,7 +470,7 @@ Partial Class Form_Cotizacion
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(18, 151)
+        Me.Label20.Location = New System.Drawing.Point(18, 174)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(39, 15)
         Me.Label20.TabIndex = 57
@@ -480,7 +480,7 @@ Partial Class Form_Cotizacion
         '
         Me.TextBox14.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox14.Location = New System.Drawing.Point(69, 149)
+        Me.TextBox14.Location = New System.Drawing.Point(69, 172)
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(137, 20)
         Me.TextBox14.TabIndex = 58
@@ -949,11 +949,11 @@ Partial Class Form_Cotizacion
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(522, 695)
+        Me.Label27.Location = New System.Drawing.Point(534, 694)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(40, 15)
+        Me.Label27.Size = New System.Drawing.Size(43, 15)
         Me.Label27.TabIndex = 94
-        Me.Label27.Text = "TOTAL:"
+        Me.Label27.Text = "TOTAL :"
         '
         'TextBox20
         '
@@ -968,11 +968,11 @@ Partial Class Form_Cotizacion
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(522, 665)
+        Me.Label26.Location = New System.Drawing.Point(420, 664)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(26, 15)
+        Me.Label26.Size = New System.Drawing.Size(163, 15)
         Me.Label26.TabIndex = 92
-        Me.Label26.Text = "IGV:"
+        Me.Label26.Text = "IGV  DEL SUB TOTAL + UTILIDAD:"
         '
         'TextBox19
         '
