@@ -1027,13 +1027,12 @@ Partial Class Form_Cotizacion
         '
         Me.Button11.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button11.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(202, 125)
+        Me.Button11.Location = New System.Drawing.Point(11, 111)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(181, 20)
         Me.Button11.TabIndex = 25
         Me.Button11.Text = "CREAR COTIZACION INTERNA"
         Me.Button11.UseVisualStyleBackColor = False
-        Me.Button11.Visible = False
         '
         'Button12
         '
@@ -1070,7 +1069,6 @@ Partial Class Form_Cotizacion
         'GroupBox5
         '
         Me.GroupBox5.Controls.Add(Me.Button24)
-        Me.GroupBox5.Controls.Add(Me.Button23)
         Me.GroupBox5.Controls.Add(Me.Button22)
         Me.GroupBox5.Controls.Add(Me.Button20)
         Me.GroupBox5.Controls.Add(Me.Button13)
@@ -1100,7 +1098,7 @@ Partial Class Form_Cotizacion
         'Button23
         '
         Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button23.Location = New System.Drawing.Point(191, 126)
+        Me.Button23.Location = New System.Drawing.Point(154, 611)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(186, 20)
         Me.Button23.TabIndex = 105
@@ -1122,13 +1120,12 @@ Partial Class Form_Cotizacion
         '
         Me.Button20.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Button20.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button20.Location = New System.Drawing.Point(194, 125)
+        Me.Button20.Location = New System.Drawing.Point(11, 85)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(181, 20)
         Me.Button20.TabIndex = 90
         Me.Button20.Text = "CREAR COTIZACION VENTA"
         Me.Button20.UseVisualStyleBackColor = False
-        Me.Button20.Visible = False
         '
         'Button15
         '
@@ -1310,6 +1307,7 @@ Partial Class Form_Cotizacion
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.ClientSize = New System.Drawing.Size(1281, 718)
         Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Button23)
         Me.Controls.Add(Me.TextBox30)
         Me.Controls.Add(Me.TextBox29)
         Me.Controls.Add(Me.TextBox28)

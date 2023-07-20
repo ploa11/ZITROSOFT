@@ -1236,7 +1236,7 @@ Public Class Form_Cotizacion
         'conexion.Open()
         nc = TextBox23.Text
         Dim ds As New DataSet
-        Adaptador = New SqlClient.SqlDataAdapter("Select *from T_COTI_ITEMS where COD_COTI ='" + nc + "'", Form_Reg_SRV_SQL.conexion)
+        Adaptador = New SqlClient.SqlDataAdapter("Select *from T_COTI_ITEMS_NEW where COD_COTI ='" + nc + "'", Form_Reg_SRV_SQL.conexion)
         Adaptador.Fill(ds)
         If ds.Tables(0).Rows.Count > 0 Then
             Dim fila As DataRow
@@ -1245,20 +1245,20 @@ Public Class Form_Cotizacion
 
             For Each fila In ds.Tables(0).Rows
                 xlibro.Range("A" & ValorInicial).Value = fila("CANTIDAD")
-                xlibro.Range("B" & ValorInicial).Value = fila("DESCRIP")
-                Dim UTIL As Double = (fila("PORCEN_UTIL") / 100)
-                Dim UTIL_PUNIT As Double = (fila("PREC_UNIT") * UTIL)
-                Dim P_UNIT_UTIL As Double = fila("PREC_UNIT") + UTIL_PUNIT
-                xlibro.Range("G" & ValorInicial).Value = P_UNIT_UTIL 'fila("PREC_UNIT") + (fila("PREC_UNIT") * (fila("PORCEN_UTIL") * 100))
-                Dim total As Double = P_UNIT_UTIL * fila("CANTIDAD")
-                xlibro.Range("H" & ValorInicial).Value = total 'fila("PREC_TOTAL")
-                Dim por_igv As Double = 18 / 100
-                xlibro.Range("K" & ValorInicial).Value = total * por_igv 'fila("IGV")
-                Dim igv_cot As Double = total * por_igv
+                xlibro.Range("B" & ValorInicial).Value = fila("DESCRIPCION")
+                'Dim UTIL As Double = (fila("PORCEN_UTIL") / 100)
+                'Dim UTIL_PUNIT As Double = (fila("PREC_UNIT") * UTIL)
+                'Dim P_UNIT_UTIL As Double = fila("PREC_UNIT") + UTIL_PUNIT
+                xlibro.Range("G" & ValorInicial).Value = fila("PU_UTIL") 'fila("PREC_UNIT") + (fila("PREC_UNIT") * (fila("PORCEN_UTIL") * 100))
+                ' Dim total As Double = P_UNIT_UTIL * fila("CANTIDAD")
+                ' xlibro.Range("H" & ValorInicial).Value = FILA(""total 'fila("PREC_TOTAL")
+                'Dim por_igv As Double = 18 / 100
+                ' xlibro.Range("K" & ValorInicial).Value = total * por_igv 'fila("IGV")
+                'Dim igv_cot As Double = total * por_igv
                 xlibro.Range("I" & ValorInicial).Value = 0 'fila("PORCEN_UTIL")
                 xlibro.Range("J" & ValorInicial).Value = 0 'fila("UTILIDAD")
                 xlibro.Range("F" & ValorInicial).Value = fila("UND")
-                xlibro.Range("L" & ValorInicial).Value = total + igv_cot 'fila("PREC_TOTAL") + fila("UTILIDAD") + fila("IGV")
+                'xlibro.Range("L" & ValorInicial).Value = total + igv_cot 'fila("PREC_TOTAL") + fila("UTILIDAD") + fila("IGV")
 
                 ' xlibro.Range("G" & ValorInicial).Value = fila("CUOTA TOTAL")
                 ' xlibro.Range("H" & ValorInicial).Value = fila("FECHA DE INICIO")
@@ -1266,9 +1266,9 @@ Public Class Form_Cotizacion
                 'xlibro.Range("J" & ValorInicial).Value = fila("DIAS DE CUOTA")
 
 
-                SUBTOTAL = SUBTOTAL + total '(fila("PREC_TOTAL"))
-                IGV = IGV + igv_cot '(fila("IGV"))
-                UTIL_DOC_COTI = 0 'UTIL_DOC_COTI + (fila("UTILIDAD"))
+                ' SUBTOTAL = SUBTOTAL + total '(fila("PREC_TOTAL"))
+                ' IGV = IGV + igv_cot '(fila("IGV"))
+                ' UTIL_DOC_COTI = 0 'UTIL_DOC_COTI + (fila("UTILIDAD"))
 
                 ' sql = "select COD AS [CODIGO],COD_COTI AS [CODIGO COTIZACION], CANTIDAD , DESCRIP AS [DESCRIPCION DE ITEM], PREC_UNIT AS [PRECIO UNITARIO], PREC_TOTAL AS [PRECIO TOTAL],IGV from T_COTI_ITEMS WHERE COD_COTI='" + TextBox23.Text + "'"
 
@@ -1278,11 +1278,11 @@ Public Class Form_Cotizacion
 
 
         End If
-        TotalCOTI = SUBTOTAL + IGV '+ UTIL_DOC_COTI
-        xlibro.Range("L44").Value = SUBTOTAL
-        xlibro.Range("L45").Value = 0 '0UTIL_DOC_COTI
-        xlibro.Range("L46").Value = IGV
-        xlibro.Range("L47").Value = TotalCOTI
+        'TotalCOTI = SUBTOTAL + IGV '+ UTIL_DOC_COTI
+        ' xlibro.Range("L44").Value = SUBTOTAL
+        ' xlibro.Range("L45").Value = 0 '0UTIL_DOC_COTI
+        ' xlibro.Range("L46").Value = IGV
+        'xlibro.Range("L47").Value = TotalCOTI
         Form_Reg_SRV_SQL.conexion.Close()
         xlibro.Workbooks.Close()
     End Sub
