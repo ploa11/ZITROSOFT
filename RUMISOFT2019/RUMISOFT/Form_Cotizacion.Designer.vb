@@ -113,10 +113,10 @@ Partial Class Form_Cotizacion
         Me.Button14 = New System.Windows.Forms.Button()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Button24 = New System.Windows.Forms.Button()
-        Me.Button23 = New System.Windows.Forms.Button()
         Me.Button22 = New System.Windows.Forms.Button()
         Me.Button20 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox25 = New System.Windows.Forms.TextBox()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -941,7 +941,7 @@ Partial Class Form_Cotizacion
         Me.TextBox21.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox21.Enabled = False
-        Me.TextBox21.Location = New System.Drawing.Point(593, 692)
+        Me.TextBox21.Location = New System.Drawing.Point(593, 673)
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.Size = New System.Drawing.Size(110, 20)
         Me.TextBox21.TabIndex = 95
@@ -949,7 +949,7 @@ Partial Class Form_Cotizacion
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(534, 694)
+        Me.Label27.Location = New System.Drawing.Point(534, 675)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(43, 15)
         Me.Label27.TabIndex = 94
@@ -960,7 +960,7 @@ Partial Class Form_Cotizacion
         Me.TextBox20.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox20.Enabled = False
-        Me.TextBox20.Location = New System.Drawing.Point(593, 662)
+        Me.TextBox20.Location = New System.Drawing.Point(593, 643)
         Me.TextBox20.Name = "TextBox20"
         Me.TextBox20.Size = New System.Drawing.Size(110, 20)
         Me.TextBox20.TabIndex = 93
@@ -968,7 +968,7 @@ Partial Class Form_Cotizacion
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(420, 664)
+        Me.Label26.Location = New System.Drawing.Point(420, 645)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(163, 15)
         Me.Label26.TabIndex = 92
@@ -979,7 +979,7 @@ Partial Class Form_Cotizacion
         Me.TextBox19.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox19.Enabled = False
-        Me.TextBox19.Location = New System.Drawing.Point(593, 597)
+        Me.TextBox19.Location = New System.Drawing.Point(593, 578)
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.Size = New System.Drawing.Size(110, 20)
         Me.TextBox19.TabIndex = 91
@@ -987,7 +987,7 @@ Partial Class Form_Cotizacion
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(520, 633)
+        Me.Label25.Location = New System.Drawing.Point(520, 614)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(63, 15)
         Me.Label25.TabIndex = 90
@@ -1095,17 +1095,6 @@ Partial Class Form_Cotizacion
         Me.Button24.Text = "Vista Preliminar e Impresion de Cotizacion"
         Me.Button24.UseVisualStyleBackColor = False
         '
-        'Button23
-        '
-        Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button23.Location = New System.Drawing.Point(154, 611)
-        Me.Button23.Name = "Button23"
-        Me.Button23.Size = New System.Drawing.Size(186, 20)
-        Me.Button23.TabIndex = 105
-        Me.Button23.Text = "Imprimir Cotizacio"
-        Me.Button23.UseVisualStyleBackColor = False
-        Me.Button23.Visible = False
-        '
         'Button22
         '
         Me.Button22.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -1137,13 +1126,24 @@ Partial Class Form_Cotizacion
         Me.Button15.Text = "Actualizar Items"
         Me.Button15.UseVisualStyleBackColor = False
         '
+        'Button23
+        '
+        Me.Button23.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Button23.Location = New System.Drawing.Point(154, 611)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(186, 20)
+        Me.Button23.TabIndex = 105
+        Me.Button23.Text = "Imprimir Cotizacio"
+        Me.Button23.UseVisualStyleBackColor = False
+        Me.Button23.Visible = False
+        '
         'DataGridView1
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonShadow
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(3, 329)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(883, 264)
+        Me.DataGridView1.Size = New System.Drawing.Size(883, 243)
         Me.DataGridView1.TabIndex = 105
         '
         'TextBox25
@@ -1151,7 +1151,7 @@ Partial Class Form_Cotizacion
         Me.TextBox25.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox25.Enabled = False
-        Me.TextBox25.Location = New System.Drawing.Point(593, 627)
+        Me.TextBox25.Location = New System.Drawing.Point(593, 608)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.Size = New System.Drawing.Size(110, 20)
         Me.TextBox25.TabIndex = 107
@@ -1159,7 +1159,7 @@ Partial Class Form_Cotizacion
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(522, 599)
+        Me.Label33.Location = New System.Drawing.Point(522, 580)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(55, 15)
         Me.Label33.TabIndex = 106
@@ -1188,7 +1188,7 @@ Partial Class Form_Cotizacion
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(3, 329)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(884, 264)
+        Me.ListView1.Size = New System.Drawing.Size(884, 243)
         Me.ListView1.TabIndex = 108
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -1266,7 +1266,7 @@ Partial Class Form_Cotizacion
         Me.TextBox28.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox28.Enabled = False
-        Me.TextBox28.Location = New System.Drawing.Point(750, 624)
+        Me.TextBox28.Location = New System.Drawing.Point(750, 605)
         Me.TextBox28.Name = "TextBox28"
         Me.TextBox28.Size = New System.Drawing.Size(110, 20)
         Me.TextBox28.TabIndex = 109
@@ -1276,7 +1276,7 @@ Partial Class Form_Cotizacion
         Me.TextBox29.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox29.Enabled = False
-        Me.TextBox29.Location = New System.Drawing.Point(750, 659)
+        Me.TextBox29.Location = New System.Drawing.Point(750, 640)
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.Size = New System.Drawing.Size(110, 20)
         Me.TextBox29.TabIndex = 110
@@ -1286,7 +1286,7 @@ Partial Class Form_Cotizacion
         Me.TextBox30.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox30.Enabled = False
-        Me.TextBox30.Location = New System.Drawing.Point(750, 690)
+        Me.TextBox30.Location = New System.Drawing.Point(750, 671)
         Me.TextBox30.Name = "TextBox30"
         Me.TextBox30.Size = New System.Drawing.Size(110, 20)
         Me.TextBox30.TabIndex = 111
@@ -1294,7 +1294,7 @@ Partial Class Form_Cotizacion
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(763, 599)
+        Me.Label7.Location = New System.Drawing.Point(763, 580)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(77, 15)
         Me.Label7.TabIndex = 112

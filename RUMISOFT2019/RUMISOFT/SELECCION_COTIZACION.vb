@@ -86,6 +86,7 @@ sin previo aviso.
         Dim FuenteDetalles As New Font("Microsoft Sans Serif", 7)
         Dim SUBTOTAL_COTI, IGV_COTI, TOTAL_COTI As Decimal
         Dim CONSIDERACIONES As String
+        Dim xrect As New Rectangle(0, 0, 20, 20)
         'Si deseamos poner un contador de páginas
         'Esta parte siempre va a salir en todas las paginas
         '---------------------------------------------------------------------------------------------
@@ -156,7 +157,7 @@ sin previo aviso.
 
             e.Graphics.DrawString(item, FuenteDetalles, Brushes.Black, Form_Imprimir_Coti.P1.Left, startY)
             e.Graphics.DrawString(Form_Imprimir_Coti.DataGridView1.Rows(printLine).Cells(3).Value.ToString, FuenteDetalles, Brushes.Black, Form_Imprimir_Coti.P2.Left, startY)
-            e.Graphics.DrawString(Form_Imprimir_Coti.DataGridView1.Rows(printLine).Cells(4).Value.ToString, FuenteDetalles, Brushes.Black, Form_Imprimir_Coti.P3.Left, startY)
+            e.Graphics.DrawString(Form_Imprimir_Coti.DataGridView1.Rows(printLine).Cells(4).Value.ToString, FuenteDetalles, Brushes.Black, xrect) 'Form_Imprimir_Coti.P3.Left, startY )
             e.Graphics.DrawString(Form_Imprimir_Coti.DataGridView1.Rows(printLine).Cells(2).Value.ToString, FuenteDetalles, Brushes.Black, Form_Imprimir_Coti.P4.Left, startY)
             e.Graphics.DrawString(Form_Imprimir_Coti.DataGridView1.Rows(printLine).Cells(12).Value.ToString, FuenteDetalles, Brushes.Black, Form_Imprimir_Coti.P5.Left, startY)
             e.Graphics.DrawString(Form_Imprimir_Coti.DataGridView1.Rows(printLine).Cells(14).Value.ToString, FuenteDetalles, Brushes.Black, Form_Imprimir_Coti.P6.Left, startY)
